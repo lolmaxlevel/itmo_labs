@@ -1,16 +1,53 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import math
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def integrate_middle_rect(f, a, b, n):
+    """
+    Вычисляет приближенное значение определенного интеграла функции f на интервале [a, b]
+    с использованием метода средних прямоугольников с n прямоугольниками.
+    """
+    dx = (b - a) / n  # ширина прямоугольников
+    x = a + dx / 2  # координата центра первого прямоугольника
+    area = 0  # суммарная площадь всех прямоугольников
+
+    for i in range(n):
+        area += f(x) * dx  # вычисляем площадь текущего прямоугольника
+        x += dx  # перемещаемся к центру следующего прямоугольника
+
+    return area
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def integrate_left_rect(f, a, b, n):
+    """
+    Вычисляет приближенное значение определенного интеграла функции f на интервале [a, b]
+    с использованием метода левых прямоугольников с n прямоугольниками.
+    """
+    dx = (b - a) / n  # ширина прямоугольников
+    x = a  # координата левого края первого прямоугольника
+    area = 0  # суммарная площадь всех прямоугольников
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    for i in range(n):
+        area += f(x) * dx  # вычисляем площадь текущего прямоугольника
+        x += dx  # перемещаемся к левому краю следующего прямоугольника
+
+    return area
+
+
+def integrate_right_rect(f, a, b, n):
+    """
+    Вычисляет приближенное значение определенного интеграла функции f на интервале [a, b]
+    с использованием метода правых прямоугольников с n прямоугольниками.
+    """
+    dx = (b - a) / n  # ширина прямоугольников
+    x = a + dx  # координата правого края первого прямоугольника
+    area = 0  # суммарная площадь всех прямоугольников
+
+    for i in range(n):
+        area += f(x) * dx  # вычисляем площадь текущего прямоугольника
+        x += dx  # перемещаемся к правому краю следующего прямоугольника
+
+    return area
+
+
+result = integrate_middle_rect(lambda x: math.sin(x), 0, 1, 100)
+print(result)
