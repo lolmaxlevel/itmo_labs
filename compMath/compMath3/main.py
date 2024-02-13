@@ -14,6 +14,16 @@ def remove_discontinuity(f):
     return g
 
 
+def is_discontinuity_of_second_kind(f, x):
+    left_limit = f(x - 0.0001)
+    right_limit = f(x + 0.0001)
+
+    if left_limit != right_limit:
+        return True
+    else:
+        return False
+
+
 def integrate_middle_rect(f, a, b, n):
     """
     Вычисляет приближенное значение определенного интеграла функции f на интервале [a, b]
@@ -70,25 +80,25 @@ def equation_1(x):
 equations = [Equation(lambda x: x ** 2, [], "x^2"),
              Equation(lambda x: math.sin(x), [], "sin(x)"),
              Equation(lambda x: math.cos(x), [], "cos(x)"),
-             Equation(equation_1, [0], "x=1, x>0\nx=0, x<0"),
+             Equation(lambda x: 1 / x, [0], "x=1/x")
              ]
 
 try:
     equation, a, b, n = equations[int(input("Выберите какое уравнение решать: \n" + "\n".join(
-            [str(i + 1) + "." + equations[i].string_form for i in range(len(equations))]) + "\n")) - 1], \
-            int(input("Введите левую границу: ")), \
-            int(input("Введите правую границу: ")), int(input("Введите количество прямоугольников: "))
+        [str(i + 1) + "." + equations[i].string_form for i in range(len(equations))]) + "\n")) - 1], \
+        int(input("Введите левую границу: ")), \
+        int(input("Введите правую границу: ")), int(input("Введите количество прямоугольников: "))
     if n < 1:
         raise ValueError("Количество прямоугольников должно быть больше 0")
     if a > b:
         raise ValueError("Левая граница должна быть меньше правой")
+    if equation.discontinuity_points and \
+            is_discontinuity_of_second_kind(equation.f, equation.discontinuity_points[0]) and \
+            a <= equation.discontinuity_points[0] <= b:
+        raise ValueError("Функция имеет разрыв 2 рода, введите другую функцию или интервал")
 except (IndexError, ValueError) as e:
-    if e == IndexError:
-        print("Такого уравнения нет, перезапустите программу и введите номер уравнения из списка")
-    if e == ValueError:
-        print("Неверный формат ввода, перезапустите программу и введите число")
+    print(str(e))
     exit(1)
-
 
 if equation.discontinuity_points and a < equation.discontinuity_points[0] < b:
     left_result = integrate_left_rect(remove_discontinuity(equation.f), a, b, n)
@@ -99,9 +109,7 @@ else:
     right_result = integrate_right_rect(equation.f, a, b, n)
     middle_result = integrate_middle_rect(equation.f, a, b, n)
 
-
 correct = integrate.quad(remove_discontinuity(equation.f), a, b)[0]
-
 
 print(f"Результат методом левых прямоугольников: {left_result} ошибка: {abs(correct - left_result)}")
 print(f"Результат методом правых прямоугольников: {right_result} ошибка: {abs(correct - right_result)}")
