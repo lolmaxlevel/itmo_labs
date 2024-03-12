@@ -11,9 +11,9 @@ list_of_equations = [
     Equation(lambda x: -(math.log(x) - math.cos(x)),
              lambda x: x - (math.log(x) - math.cos(x)), "-(log(x)-cos(x))"),
     Equation((lambda x1, x2: 1 + math.cos(x2), lambda x1, x2: 1 + math.sin(x1))
-             , None, "1+cos(y)=0\n1+sin(x)=0"),
+             , None, "compMath1+cos(y)=0\ncompMath1+sin(x)=0"),
     Equation((lambda x1, x2: x1**2+x2**2-1, lambda x1, x2: math.sin(x1)-1),
-             None, "x^2+y^2=1\n1+sin(x)=0")
+             None, "x^2+y^2=compMath1\ncompMath1+sin(x)=0")
 ]
 
 
@@ -76,7 +76,7 @@ def bisection_method(f, a, b, _eps):
     return (a + b) / 2
 
 
-if input("Введите 1 для решения уравнения и 2 для решения системы: ") == "1":
+if input("Введите compMath1 для решения уравнения и 2 для решения системы: ") == "compMath1":
     try:
         # noinspection PyTupleAssignmentBalance
         eq, approx, a, b, eps, max_iter = [int(input("Выберите какое уравнение решать: \n" + "\n".join(

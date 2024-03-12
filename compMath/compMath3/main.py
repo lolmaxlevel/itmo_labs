@@ -80,7 +80,7 @@ def equation_1(x):
 equations = [Equation(lambda x: x ** 2, [], "x^2"),
              Equation(lambda x: math.sin(x), [], "sin(x)"),
              Equation(lambda x: math.cos(x), [], "cos(x)"),
-             Equation(lambda x: 1 / x, [0], "x=1/x")
+             Equation(lambda x: 1 / x, [0], "x=compMath1/x")
              ]
 
 try:
