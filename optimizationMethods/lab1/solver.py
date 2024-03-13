@@ -29,8 +29,7 @@ def half_divide(func, a, b, eps):
             b = x2
     else:
         xm = (a + b) / 2
-        ym = f(xm)
-    return xm, ym
+    return xm
 
 
 # Метод золотого сечения
@@ -46,7 +45,7 @@ def golden_section(func, a, b, eps):
             a = x1
             x1 = x2
             x2 = a + 0.618 * (b - a)
-    return (a + b) / 2, f((a + b) / 2)
+    return (a + b) / 2
 
 
 # Метод Хорд
@@ -58,34 +57,32 @@ def chord(func, a, b, eps):
         else:
             a = x
         x = a - func(a) * (b - a) / (func(b) - func(a))
-    return x, f(x)
+    return x
 
 
 # Метод Ньютона
 def newton_method(func, dfunc, x0, eps):
-    """
-    Реализация метода Ньютона.
-
-    :param func: функция, корень которой мы ищем
-    :param dfunc: производная функции
-    :param x0: начальное приближение
-    :param eps: точность
-    :return: корень функции
-    """
     x = x0
-    while abs(func(x)) > eps:
-        x = x - func(x) / dfunc(x)
-    return x
+    while True:
+        x_new = x - func(x) / dfunc(x)
+        if abs(func(x_new)) <= eps:
+            break
+        x = x_new
+    return x_new
 
+
+hd = half_divide(f, -1, 0, 0.003)
+gs = golden_section(f, -1, 0, 0.003)
+cm = chord(df, -1, 0, 0.003)
+nm = newton_method(df, d2f, 0, 0.003)
 
 # Вывод результатов
-print(f"Half divide method: \n\tpoint = {half_divide(f, -1, 0, 0.003)[0]}, "
-      f"value = {half_divide(f, -1, 0, 0.003)[1]}\n",
-      f"Golden section method: \n\tpoint = {golden_section(f, -1, 0, 0.003)[0]}, "
-      f"value = {golden_section(f, -1, 0, 0.003)[1]}\n",
-      f"Chord method: \n\tpoint = {chord(df, -1, 0, 0.003)[0]}, "
-      f"value = {chord(df, -1, 0, 0.003)[1]}\n",
-      f"Newton method: \n\tpoint = {newton_method(f, df, 0, 0.003)[0]}, "
-      f"value = {newton_method(df, d2f, 0, 0.003)[1]}",
-
+print(f"Half divide method: \n\tpoint = {hd}, "
+      f"value = {f(hd)}\n",
+      f"Golden section method: \n\tpoint = {gs}, "
+      f"value = {f(gs)}\n",
+      f"Chord method: \n\tpoint = {cm}, "
+      f"value = {f(cm)}\n",
+      f"Newton method: \n\tpoint = {nm}, "
+      f"value = {f(nm)}",
       sep="")
