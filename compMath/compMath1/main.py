@@ -1,6 +1,5 @@
 import copy
 
-
 def print_matrix(array):
     for _ in array:
         for _1 in _:
