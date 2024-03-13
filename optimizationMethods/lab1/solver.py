@@ -52,7 +52,7 @@ def golden_section(func, a, b, eps):
 def chord(func, a, b, eps):
     x = a - func(a) * (b - a) / (func(b) - func(a))
     while abs(func(x)) > eps:
-        if func(a) * func(x) < 0:
+        if func(x) > 0:
             b = x
         else:
             a = x
@@ -65,6 +65,8 @@ def newton_method(func, dfunc, x0, eps):
     x = x0
     while True:
         x_new = x - func(x) / dfunc(x)
+        print(f"{x_new, x, func(x), dfunc(x), func(x_new)}")
+        input()
         if abs(func(x_new)) <= eps:
             break
         x = x_new
@@ -74,7 +76,7 @@ def newton_method(func, dfunc, x0, eps):
 hd = half_divide(f, -1, 0, 0.003)
 gs = golden_section(f, -1, 0, 0.003)
 cm = chord(df, -1, 0, 0.003)
-nm = newton_method(df, d2f, 0, 0.003)
+nm = newton_method(df, d2f, -0.5, 0.003)
 
 # Вывод результатов
 print(f"Half divide method: \n\tpoint = {hd}, "
