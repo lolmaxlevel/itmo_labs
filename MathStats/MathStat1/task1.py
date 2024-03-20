@@ -1,5 +1,3 @@
-import math
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm, gamma, expon
@@ -85,14 +83,17 @@ F_Xn = np.zeros(num_samples)
 for i in range(num_samples):
     sample = np.random.uniform(size=sample_size)
     sample.sort()
-    F_Xn[i] = sample_size * (1 - sample[-1])  # n-ый порядковый статистик
+    F_Xn[i] = (1 - sample[-1])  # n-ый порядковый статистик
 
 # Построение гистограммы
-plt.hist(F_Xn, bins=30, density=True, alpha=0.5, label='Experimental')
+counts, bins, _ = plt.hist(F_Xn, bins=30, alpha=0.5, label='Experimental')
 
 # Построение теоретического экспоненциального распределения
 x = np.linspace(min(F_Xn), max(F_Xn), 100)
-plt.plot(x, expon.pdf(x, scale=1), 'r-', label='Theoretical Exp(1)')
+bin_width = bins[1] - bins[0]  # Размер бина
+pdf_values = expon.pdf(x, scale=1/sample_size)  # Значения плотности вероятности
+scaled_pdf_values = pdf_values * bin_width * num_samples  # Масштабирование значений плотности вероятности
+plt.plot(x, scaled_pdf_values, 'r-', label='Theoretical Exp(1)')
 # plt.plot(x, gamma.pdf(x, 1, scale=1), 'g', label='Theoretical Gamma(1, 1)')
 
 plt.legend()
