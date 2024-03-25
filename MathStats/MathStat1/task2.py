@@ -10,7 +10,7 @@ df = pd.read_csv('cars93.csv')
 
 # Определение уникальных типов автомобилей
 car_types = df['Type'].unique()
-print(f"Unique car types: {car_types}")
+print(f"Unique car types: {" ".join(car_types)}")
 
 # Определение наиболее и наименее распространенных типов автомобилей
 most_common_type = df['Type'].value_counts().idxmax()
