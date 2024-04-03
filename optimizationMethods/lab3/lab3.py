@@ -37,7 +37,7 @@ def quadratic_approximation(function, a, b, eps):
 #                 (x2 - x3) * f1 + (x3 - x1) * f2 + (x1 - x2) * f3)
 #         f_star = f(x_star)
 #         if abs((F_min - f_star) / f_star) < eps1 and abs((x_min - x_star) / x_star) < eps2:
-#             return x_star
+#             return x_sta
 #         elif min(x1, x2, x3) <= x_star <= max(x1, x2, x3):
 #             print(x1,x2,x3,x_star)
 #             x2 = min(x_min, x_star)
