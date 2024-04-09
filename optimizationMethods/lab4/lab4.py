@@ -4,35 +4,30 @@ import numpy as np
 
 
 def func(x):
-    return x[0] ** 4 + x[1] ** 4 - 2 * (x[0] - x[1]) ** 2
+    return x[0] ** 4 + x[1] ** 4 - 2 * ((x[0] - x[1]) ** 2)
 
+# def func(x):
+#     return 2*x[0] + 4*x[1]-x[0]**2-2*x[1]**2
+
+
+# def gradient(x):
+#     return np.array([2 - 2 * x[0], 4 - 4 * x[1]])
 
 def gradient(x):
-    return np.array([4 * x[0] ** 3 - 4 * (x[0] - x[1]), 4 * x[1] ** 3 + 4 * (x[0] - x[1])])
+    return np.array([4 * (x[0]**3 - x[0] + x[1]), 4 * (x[0] + x[1]**3 - x[1])])
 
 
 def gradient_descent(x_start, learning_rate, eps):
     x = x_start
     grad = gradient(x)
     new_x = x + learning_rate * grad
+    print(x, new_x, grad, func(x), func(new_x))
     while abs(func(new_x) - func(x)) >= eps:
         x = new_x
         grad = gradient(x)
         new_x = x - learning_rate * grad
+        print(x, new_x, grad, func(x), func(new_x))
     return new_x
-
-
-# def gradient_descent(x_start, lambda_, eps):
-#     x = x_start
-#     gf = gradient(x)
-#     new_x = (x[0] + lambda_*gf[0], x[1] + lambda_*gf[1])
-#
-#     while abs(func(new_x) - func(x)) > eps:
-#         x = new_x
-#         gf = gradient(x)
-#         new_x = (x[0] + lambda_ * gf[0], x[1] + lambda_ * gf[1])
-#         print(new_x)
-#     return new_x
 
 
 def vector_norm(x):
@@ -70,10 +65,10 @@ x_min = steepest_descent(x_start, eps)
 
 print(f"The minimum point found by steepest descent is {x_min}")
 
-eps = 0.05
-x_start = np.array([-1, -1])
-learning_rate = 0.01
-
-x_min = gradient_descent(x_start, learning_rate, eps)
-
-print(f"The minimum point found by gradient descent is {x_min}")
+# eps = 0.05
+# x_start = np.array([1, 1])
+# learning_rate = 0.1
+#
+# x_min = gradient_descent(x_start, learning_rate, eps)
+#
+# print(f"The minimum point found by gradient descent is {x_min}")
