@@ -11,48 +11,6 @@ def min_check(seq):
         x += 1
     return min(seq)
 
-def calculate_bases(a, b, c, counter):
-    bases = []
-    for x in range(len(a[0])):
-        column = [row[x] for row in a]
-        if column.count(1) == 1 and column.count(0) == len(column) - 1:
-            bases.append(column.index(1))
-        else:
-            bases.append(-1)
-    baseExists = []
-    for x in range(0, len(b)):
-        baseExists.append(False)
-    for x in range(0, len(a[0])):
-        if bases[x] > -1:
-            baseExists[bases[x]] = True
-    for x in range(0, len(b)):
-        if not baseExists[x]:
-            c.append(1)
-            counter += 1
-            for y in range(0, len(b)):
-                a[y].append(0)
-            a[x][len(a[0]) - 1] = 1
-            bases.append(x)
-    return bases
-
-def calculate_potential(a, b, index):
-    potential = []
-    for y in range(0, len(b)):
-        if a[y][index] > 0:
-            potential.append(b[y] / a[y][index])
-        else:
-            potential.append('-1')
-    return potential
-
-def calculate_result(a, b, bases, counter):
-    result = []
-    bases = bases[:len(bases) - counter]
-    for x in range(0, len(bases)):
-        if bases[x] > -1:
-            result.append(b[bases[x]])
-        else:
-            result.append(0)
-    return result
 def my_simplex(a, b, c, flip, counter):
     # преобразование задачи из макс. в мин.
     if flip:

@@ -20,63 +20,10 @@ def my_simplex_double(a, b, c, flip, saveslack, counter):
     # базисы определяются значением индекса, на котором стоит единица
     # иначе значение индекса -1
     bases = []
-    # symbols - вспомогательный список для работы с преобразованием задачи в канонический вид
-    # из каждого уравнения берёт последний элемент, который может быть знаком неравенства
-    # если знак неравенства присутствует, то значение убирается для дальнейшего подсчёта
-    # иначе считается, что между уравнением и ограничением стоит равенство
-    symbols = []
-    for x in range(0, len(a)):
-        index = len(a[x]) - 1
-        if type(a[x][index]) is str:
-            symbols.append(a[x][index])
-            a[x].pop(index)
-        else:
-            symbols.append(a[x][index])
-    # сounter - переменная для удаления slack'ов
-    # все доп. переменные обычно находятся в конце, и их легко удалить
-    # counter - количество таких доп. переменных
-    # преобразование в канонич. вид
-    # если присутствует знак, то дальше идут действия в соответствии с ним
-    for x in range(0, len(a)):
-        # если знак присутствует, то в строке добавляется 1 (или -1), в остальных нули
-        if symbols[x] == '<':
-            c.append(0)
-            counter += 1
-            for y in range(0, len(a)):
-                if y != x:
-                    a[y].append(0)
-                else:
-                    a[y].append(1)
-        elif symbols[x] == '>':
-            c.append(0)
-            counter += 1
-            for y in range(0, len(a)):
-                if y != x:
-                    a[y].append(0)
-                else:
-                    a[y].append(-1)
-    # далее для определения, существуют ли везде базисы, работает этот цикл
-    # в первую очередь, мы определяем все уже существующие базисы
-    for x in range(0, len(a[0])):
-        # изначально мы предполагаем что столбец базисный, но с неопр. индексом (-1)
-        y = 0
-        baseIndex = -1
-        isBase = True
-        while isBase and y < len(b):
-            # если мы находим 1 или 0, то всё хорошо
-            isBase = a[y][x] == 0 or a[y][x] == 1
-            # однако нужно проверить, какой раз мы "напоролись" на единицу
-            # если уже не первый, то явно столбец тоже не базисный
-            if a[y][x] == 1:
-                if baseIndex > -1:
-                    isBase = False
-                    baseIndex = -1
-                else:
-                    baseIndex = y
-            y += 1
-            # если всё хорошо, добавляем новый базисный индекс, иначе -1
-        if isBase:
-            bases.append(baseIndex)
+    for x in range(len(a[0])):
+        column = [row[x] for row in a]
+        if column.count(1) == 1 and column.count(0) == len(column) - 1:
+            bases.append(column.index(1))
         else:
             bases.append(-1)
     baseExists = []
@@ -100,12 +47,6 @@ def my_simplex_double(a, b, c, flip, saveslack, counter):
                 a[y].append(0)
             a[x][len(a[0]) - 1] = 1
             bases.append(x)
-    # запоминаем, какие столбцы у нас изначально были базисными
-    # понадобится для дальнейшей работы
-    bases_prime = []
-    for x in range(0, len(bases)):
-        if bases[x] > -1:
-            bases_prime.append(x)
     # подсчёт оценок
     deltas = []
     for y in range(0, len(a[0])):
@@ -193,6 +134,8 @@ def my_simplex_double(a, b, c, flip, saveslack, counter):
             f += b[bases[x]] * c[x]
     if flip:
         f = -f
-    return [a, b, bases_prime, bases, f, result, c, counter]
+    return [a, b, bases, f, result, c, counter]
 
-print(my_simplex_double([[1, 2, -1, 0, 0], [-4, -3, 0, -1, 0], [-4, -4, -1, -1, -1]], [-2, -12, -10], [-5, -4, 0, 0, 0], False, False, 0))
+
+print(my_simplex_double([[1, 2, -1, 0, 0], [-4, -3, 0, -1, 0], [-4, -4, -1, -1, -1]], [-2, -12, -10],
+                        [-5, -4, 0, 0, 0],False, False, 0))
