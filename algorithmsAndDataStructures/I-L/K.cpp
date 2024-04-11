@@ -1,53 +1,89 @@
 #include <iostream>
-#include <queue>
 #include <vector>
 
 using namespace std;
 
-struct Block {
-    int size, start;
-    bool operator<(const Block& other) const {
-        if (size == other.size) return start > other.start;
-        return size < other.size;
-    }
+struct Segment {
+    int start, length;
+    bool isOccupied;
+    Segment* next;
+    Segment* prev;
+
+    Segment(int start, int length) : start(start), length(length), isOccupied(false), next(nullptr), prev(nullptr) {}
+
+    Segment() : start(0), length(0), isOccupied(false), next(nullptr), prev(nullptr) {}  // default constructor
 };
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(nullptr);
     int N, M;
     cin >> N >> M;
 
-    priority_queue<Block> freeBlocks;
-    freeBlocks.push({N, 1});
+    auto* head = new Segment(0, N);
 
-    vector<Block> allocatedBlocks(M + 1);
+    vector<Segment*> allocations(M);
+    vector<int> results;
 
-    for (int i = 1; i <= M; i++) {
-        int K;
-        cin >> K;
+    for (int i = 0; i < M; i++) {
+        int request;
+        cin >> request;
 
-        if (K > 0) {
-            while (!freeBlocks.empty() && freeBlocks.top().size < K) {
-                freeBlocks.pop();
+        if (request > 0) {
+            Segment* current = head;
+            while (current != nullptr && (current->isOccupied || current->length < request)) {
+                current = current->next;
             }
-            if (freeBlocks.empty()) {
-                cout << -1 << endl;
-                allocatedBlocks[i] = {0, 0};
-            } else {
-                Block block = freeBlocks.top();
-                freeBlocks.pop();
-                cout << block.start << endl;
-                allocatedBlocks[i] = {K, block.start};
-                if (block.size > K) {
-                    freeBlocks.push({block.size - K, block.start + K});
+            if (current != nullptr && current->length >= request) {
+                current->isOccupied = true;
+
+                allocations[i] = current;
+                results.push_back(current->start + 1);
+
+                if (current->length > request) {
+                    auto* newSegment = new Segment(current->start + request, current->length - request);
+                    newSegment->next = current->next;
+                    newSegment->prev = current;
+                    if (current->next != nullptr) {
+                        current->next->prev = newSegment;
+                    }
+                    current->next = newSegment;
+                    current->length = request;
                 }
+            } else {
+                allocations[i] = nullptr;
+                results.push_back(-1);
             }
         } else {
-            int T = -K;
-            Block block = allocatedBlocks[T];
-            if (block.size > 0) {
-                freeBlocks.push(block);
+            if (results[-request - 1] == -1 || allocations[-request - 1] == nullptr) {
+                allocations[i] = nullptr;
+                continue;
+            }
+            Segment* segment = allocations[-request - 1];
+            segment->isOccupied = false;
+            allocations[i] = nullptr;
+
+            if (segment->prev != nullptr && !segment->prev->isOccupied) {
+                segment->prev->length += segment->length;
+                segment->prev->next = segment->next;
+                if (segment->next != nullptr) {
+                    segment->next->prev = segment->prev;
+                }
+                segment = segment->prev;
+            }
+
+            if (segment->next != nullptr && !segment->next->isOccupied) {
+                segment->length += segment->next->length;
+                if (segment->next->next != nullptr) {
+                    segment->next->next->prev = segment;
+                }
+                segment->next = segment->next->next;
             }
         }
+    }
+
+    for (int result: results) {
+        cout << result << endl;
     }
 
     return 0;

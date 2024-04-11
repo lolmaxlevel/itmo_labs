@@ -20,13 +20,11 @@ def gradient(x):
 def gradient_descent(x_start, learning_rate, eps):
     x = x_start
     grad = gradient(x)
-    new_x = x + learning_rate * grad
-    print(x, new_x, grad, func(x), func(new_x))
+    new_x = x - learning_rate * grad
     while abs(func(new_x) - func(x)) >= eps:
         x = new_x
         grad = gradient(x)
         new_x = x - learning_rate * grad
-        print(x, new_x, grad, func(x), func(new_x))
     return new_x
 
 
@@ -54,21 +52,20 @@ def steepest_descent(x_start, eps):
         if vector_norm([new_x[i] - x[i] for i in range(len(x))]) < eps:
             break
         x = new_x
-        print(new_x)
     return x
 
 
-x_start = [1, 1]
+x_start = [1, -1]
 eps = 0.05
 
 x_min = steepest_descent(x_start, eps)
 
 print(f"The minimum point found by steepest descent is {x_min}")
 
-# eps = 0.05
-# x_start = np.array([1, 1])
-# learning_rate = 0.1
-#
-# x_min = gradient_descent(x_start, learning_rate, eps)
-#
-# print(f"The minimum point found by gradient descent is {x_min}")
+eps = 0.05
+x_start = np.array([1, -1])
+learning_rate = 0.1
+
+x_min = gradient_descent(x_start, learning_rate, eps)
+
+print(f"The minimum point found by gradient descent is {x_min}")
