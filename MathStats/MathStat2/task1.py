@@ -1,55 +1,79 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import gamma
+from scipy.special import factorial
 
-
-# Определение функции плотности вероятности
-def pdf(x, theta, k):
-    return (1 / (k - 1) * theta ** k) * x ** (k - 1) * np.exp(-x / theta)
-
-
-# Оценка параметра theta методом моментов
-def estimate_theta(sample, k):
-    return np.mean(sample) / k
-
-
-# Задание массива объемов выборки
-sample_sizes = np.arange(10, 1000, 10)
-
-# Истинное значение theta
-true_theta = 2
+# параметры распределения
 k = 3
+theta = 2
 
-# Массивы для хранения результатов
-means = []
+theoretical_mean = k * theta
+# функция плотности распределения
+def f(x, theta, k):
+    return (1 / (factorial(k - 1) * (theta ** k))) * (x ** (k - 1)) * np.exp(-x / theta)
+
+
+# оценка параметра theta методом моментов
+def estimate_theta(sample):
+    return np.mean(sample)
+
+
+# массив объемов выборки
+sample_sizes = [10, 50, 100, 500, 1000, 5000, 10000]
+
+# массив для хранения оценок параметра theta
+theta_estimates = []
+
+# проведение эксперимента
+
+# заданный порог
+threshold = 0.1
+
+# массивы для хранения выборочных характеристик
+biases = []
 variances = []
+mses = []
+exceed_threshold_counts = []
 
-for n in sample_sizes:
-    # Генерация выборок и оценка theta
-    estimates = [estimate_theta(gamma.rvs(a=k, scale=true_theta, size=n), k) for _ in range(1000)]
-
-    # Вычисление выборочных характеристик
-    mean = np.mean(estimates)
-    variance = np.var(estimates)
-
-    means.append(mean)
+# обработка результатов
+for size in sample_sizes:
+    # генерация выборок
+    samples = [np.random.gamma(shape=k, scale=theta, size=size) for _ in range(100)]
+    # оценка параметра theta для каждой выборки
+    theta_estimates = [estimate_theta(sample) for sample in samples]
+    # расчет выборочных характеристик
+    bias = np.mean(theta_estimates) - theoretical_mean
+    variance = np.mean((theta_estimates - np.mean(theta_estimates)) ** 2)
+    mse = bias ** 2 + variance
+    # подсчет количества выборок, для которых оценка отличается от реального параметра более чем на заданный порог
+    exceed_threshold_count = sum(abs(theta_estimate - theoretical_mean) > threshold for theta_estimate in theta_estimates)
+    # сохранение результатов
+    biases.append(bias)
     variances.append(variance)
+    mses.append(mse)
+    exceed_threshold_counts.append(exceed_threshold_count)
 
-# Визуализация результатов
-plt.figure(figsize=(12, 6))
+# визуализация результатов
+plt.figure(figsize=(12, 8))
 
-plt.subplot(1, 2, 1)
-plt.plot(sample_sizes, means, label='Mean of estimates')
-plt.axhline(y=true_theta, color='r', linestyle='-', label='True theta')
+plt.subplot(2, 2, 1)
+plt.plot(sample_sizes, biases, marker='o')
 plt.xlabel('Sample size')
-plt.ylabel('Mean of theta estimates')
-plt.legend()
+plt.ylabel('Bias')
 
-plt.subplot(1, 2, 2)
-plt.plot(sample_sizes, variances, label='Variance of estimates')
+plt.subplot(2, 2, 2)
+plt.plot(sample_sizes, variances, marker='o')
 plt.xlabel('Sample size')
-plt.ylabel('Variance of theta estimates')
-plt.legend()
+plt.ylabel('Variance')
+
+plt.subplot(2, 2, 3)
+plt.plot(sample_sizes, mses, marker='o')
+plt.xlabel('Sample size')
+plt.ylabel('Mean Squared Error')
+
+plt.subplot(2, 2, 4)
+plt.plot(sample_sizes, exceed_threshold_counts, marker='o')
+plt.xlabel('Sample size')
+plt.ylabel('Exceed threshold count')
 
 plt.tight_layout()
 plt.show()
