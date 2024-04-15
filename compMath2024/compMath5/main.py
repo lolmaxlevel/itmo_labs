@@ -1,6 +1,5 @@
 import math
 
-
 class Result:
 
     def first_function(x: float, y: float):
@@ -48,44 +47,43 @@ class Result:
         # Get the function to integrate
         func = Result.get_function(f)
 
-        # Initialize the solution at the initial condition
-        y = y_a
-
-        # Calculate the initial step size
-        h = (b - a) / 100.0
-
-        while a <= b:
-            # Calculate the slope at the beginning of the interval
-            slope = func(a, y)
-
-            # Estimate the solution at the end of the interval using the standard Euler method
-            y_temp = y + h * slope
-
-            # Calculate the slope at the end of the interval
-            slope_end = func(a + h, y_temp)
-
-            # Calculate the average of the two slopes
-            average_slope = (slope + slope_end) / 2.0
-
-            # Update the solution using the average slope
-            y_new = y + h * average_slope
-
-            # If the error is too large, reduce the step size
-            if abs(y_new - y_temp) > epsilon:
-                h = h / 2.0
-            else:
-                # If the error is small enough, double the step size
-                h = h * 2.0
-                # Update the solution and the current x-value
-                y = y_new
-                a = a + h
-
-        return y
+        step_size = (b - a) / 1000  # initial step size
+        current_x = a
+        current_y = y_a
+        while current_x < b:
+            half_step = step_size / 2
+            delta_y = step_size * func(current_x + half_step, current_y + half_step * func(current_x, current_y))
+            new_y = current_y + delta_y
+            while abs(new_y - current_y) > epsilon:
+                step_size = step_size / 2  # reduce step size
+                half_step = step_size / 2
+                delta_y = step_size * func(current_x + half_step, current_y + half_step * func(current_x, current_y))
+                new_y = current_y + delta_y
+            current_y = new_y
+            current_x += step_size
+        return current_y
 
 
-# How to use this function:
-# result = Result()
-# result.solveByEulerImproved(4, 0.01, 0.0, 0.0, 1.0)
-result = Result()
+def main():
+    print("Выберите функцию для интегрирования:")
+    print("1: sin(x)")
+    print("2: (x * y) / 2")
+    print("3: y - (2 * x) / y")
+    print("4: x + y")
+    try:
+        function_index = int(input("Введите номер функции: "))
 
-print(result.solveByEulerImproved(4, 0.01, 0.0, 0.0, 1.0))
+        precision = float(input("Введите желаемую точность: "))
+        start_x = float(input("Введите начальное значение x: "))
+        start_y = float(input("Введите начальное значение y(x): "))
+        end_x = float(input("Введите конечное значение x: "))
+    except ValueError:
+        print("Ошибка ввода. Попробуйте снова.")
+        return
+
+    result = Result().solveByEulerImproved(function_index, precision, start_x, start_y, end_x)
+    print(f"Результат: {result}")
+
+
+if __name__ == "__main__":
+    main()
