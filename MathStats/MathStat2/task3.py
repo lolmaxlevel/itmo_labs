@@ -1,51 +1,22 @@
-from functools import cache
-
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.special import factorial
-from scipy import integrate, optimize
 
-# параметры распределения
-k = 3
-theta = 2
-
-theoretical_mean = k * theta
+# параметры гамма-распределения
+k, l = 1, 1
 
 
-def f(x, theta, k):
-    return (1 / (factorial(k - 1) * (theta ** k))) * (x ** (k - 1)) * np.exp(-x / theta)
+# заданный порог
+threshold = 0.01
 
-@cache
-def F(x, theta, k):
-    result, _ = integrate.quad(f, 0, x, args=(theta, k))
-    return result
-
-@cache
-def inverse_F(p, theta, k):
-    func = lambda x: F(float(x), theta, k) - p
-    return optimize.root(func, 0).x[0]
+sample_sizes = [10, 50, 100, 500, 1000, 5000, 10000]
 
 
-def generate_sample(size):
-    sample = np.random.uniform(0, 1, size)
-    return np.array([inverse_F(p, theta, k) for p in sample])
-
-
-# оценка параметра theta методом моментов
-def estimate_theta(sample):
+# Байесовская оценка theta
+def estimate_theta_bayesian(sample):
     return np.mean(sample)
 
 
-# массив объемов выборки
-sample_sizes = [10, 50, 100, 500]
-
-# массив для хранения оценок параметра theta
-theta_estimates = []
-
-# заданный порог
-threshold = 0.1
-
-# массивы для хранения выборочных характеристик
+# массивы для сохранения результатов
 biases = []
 variances = []
 mses = []
@@ -53,18 +24,19 @@ exceed_threshold_counts = []
 
 # обработка результатов
 for size in sample_sizes:
-    print(size)
+    # генерация theta из гамма-распределения
+    theta_real = np.random.gamma(shape=k, scale=l)
     # генерация выборок
-    samples = [generate_sample(size) for _ in range(100)]
-    # оценка параметра theta для каждой выборки
-    theta_estimates = [estimate_theta(sample) for sample in samples]
+    samples = [np.random.exponential(scale=theta_real, size=size) for _ in range(1000)]
+    # оценка theta для каждой выборки
+    theta_estimates = [estimate_theta_bayesian(sample) for sample in samples]
     # расчет выборочных характеристик
-    bias = np.mean(theta_estimates) - theoretical_mean
+    bias = np.mean(theta_estimates) - theta_real
     variance = np.mean((theta_estimates - np.mean(theta_estimates)) ** 2)
     mse = bias ** 2 + variance
     # подсчет количества выборок, для которых оценка отличается от реального параметра более чем на заданный порог
     exceed_threshold_count = sum(
-        abs(theta_estimate - theoretical_mean) > threshold for theta_estimate in theta_estimates)
+        abs(theta_estimate - theta_real) > threshold for theta_estimate in theta_estimates)
     # сохранение результатов
     biases.append(bias)
     variances.append(variance)
