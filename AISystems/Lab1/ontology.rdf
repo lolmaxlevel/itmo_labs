@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Price">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AK-47 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AK-47">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2700</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AUG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AUG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3300</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AWP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#AWP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4750</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#CZ75-Auto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#CZ75-Auto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Decoy_Grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Decoy_Grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Desert_Eagle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Desert_Eagle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Dual_Berettas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Dual_Berettas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#FAMAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#FAMAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2050</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Five-SeveN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Five-SeveN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Flashbang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Flashbang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#G3SG1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#G3SG1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Galil_AR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Galil_AR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Glock-18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Glock-18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#HE_Grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#HE_Grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Incendiary_Grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Incendiary_Grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M249 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M249">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Machine_gun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5200</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M4A1-S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M4A1-S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2900</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M4A4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#M4A4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3100</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#MAG-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#MAG-7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1300</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Machine_gun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Machine_gun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Molotov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Molotov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Negev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Negev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Machine_gun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1700</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Nova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Nova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1050</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#P2000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#P2000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#P250 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#P250">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SCAR-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SCAR-20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SG_553 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SG_553">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Rifle"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SSG_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#SSG_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1700</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sawed-Off -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sawed-Off">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1100</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Smoke_Grenade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Smoke_Grenade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Both"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Grenade"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Sniper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Tec-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Tec-9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Terrorists">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#USP-S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#USP-S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Pistol"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#XM1014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#XM1014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+        <untitled-ontology-2:Side rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Counter-Terrorists"/>
+        <untitled-ontology-2:Type rdf:resource="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Shotgun"/>
+        <untitled-ontology-2:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</untitled-ontology-2:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Gun"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Price"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Side"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ilushapc/ontologies/2024/9/untitled-ontology-2#Type"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,31 @@
+% Получить список всего оружия
+?- weapon(X).
+
+% Найти все пистолеты
+?- weapon_type(X, pistol).
+
+% Найти все оружие террористов
+?- weapon_side(X, terrorists).
+
+% Найти все пистолеты дешевле 500$
+?- weapon_type(X, pistol), weapon_price(X, Price), Price < 500.
+
+% Найти все снайперские винтовки для контр-террористов
+?- weapon_type(X, sniper), weapon_side(X, counter_terrorists).
+
+% Найти альтернативы для AK-47 у контр-террористов
+?- alternative_weapon("AK-47", X).
+
+% Найти самое дешевое оружие каждого типа
+?- cheapest_weapon_by_type(Type, Weapon).
+
+% Найти все оружие для эко-раунда у террористов
+?- eco_weapon(X), weapon_side(X, terrorists).
+
+% Найти все оружие определенного типа в заданном ценовом диапазоне для конкретной стороны
+?- weapon_by_type_and_side(rifle, terrorists, X), weapon_in_range(2000, 3000, X).
+
+% Найти все пары оружия одного типа с разницей в цене более 1000$
+?- weapon_type(W1, Type), weapon_type(W2, Type), 
+   weapon_price(W1, P1), weapon_price(W2, P2), 
+   P2 - P1 > 1000, W1 \= W2.
