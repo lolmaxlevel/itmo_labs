@@ -27,20 +27,18 @@
 
 Требования к системе принятия решений:
 
-1) Система должна предоставить пользователю выбрать интересующие его жанры, платформы и типы видеоигр
-2) Система должна на основе проведенного с пользователем диалога предоставить ему список подходящих видеоигр'
+1) Система должна предоставить пользователю выбрать сторону, стоимость оружия и предпочитаемый вид оружия.
+2) Система должна на основе проведенного с пользователем диалога предоставить ему список подходящего оружия.
 3) Система должна уметь работать с разными базами знаний, созданными на логическом языке Prolog
-4) Система должна предоставить пользователю завершить работу программы, не дожидаясь конца диалога, при помощи 
-текстовой команды 'exit'
 
 Требования к базе знаний и онтологии:
 
-1) Должны быть представлены названия видеоигр
-2) Должны быть представлены названия жанров, платформ и типов видеоигр
-3) У каждой игры должно быть минимум:
-   - Один жанр
-   - Одна платформа
-   - Один тип
+1) Должны быть представлены названия оружия
+2) Должны быть представлены названия типов оружия, сторон конфликта.
+3) У каждой игры должно быть:
+- Тип
+- Цена
+- Сторона за которую есть возможность преобретения.
 
 Примечание: здесь представлены требования по отношению конкретно к самому проекту - основные требования 
 можно посмотреть в 
@@ -87,51 +85,44 @@ Prolog для поиска решения применяет механизм у
 ## Пример работы системы
 
 ```
-You are using a CLI-program to find matching games. 
-You have to answer the some questions.
-If you want to exit - write `exit` command.
+   
+    Добро пожаловать в лучший в мире помощник по выбору оружия в контер страйк 2!
+    
+    Сейчас мы у вас спросим несколько вопросов, отвечайте честно и в формате который просят, спасибо!
+    
+    Приятного использования!
+    
+Введите сторону (`terrorists`, `counter_terrorists`, `ct`, `t` и подобное): 
+>t
 
-Enter game platforms you use. List of available platforms:
+We will make them cry!
+Введите в какой бюджет мы выбираем оружие `eco` если эко раунд, `cheap` если пистолетный раунд или совсем нет денег. Или просто целое число: 
+>eco
 
-- pc
-- console
-- mobile
-- vr
+Введите какое оружие предпочитаете, возможные варианты - rifle, sniper, pistol, machine_gun, any:
+>any
 
-Enter a message of format: "I play on: <your platforms>"
-Example: I play on: pc, mobile
+Отличный выбор!
 
-> I play on: mobile
-Enter game genres you like. List of available genres:
-
-- action
-- adventure
-- strategy
-- simulator
-- role_playing
-- puzzle
-- shooter
-- musical
-- horror
-- casual
-- education
-
-Enter a message of format: "I like: <your genres>"
-Example: I like: action, horror
-
-> I like: adventure
-Enter game types you prefer. List of available types:
-
-- singleplayer
-- multiplayer
-- cooperative
-
-Enter a message of format: "I prefer: <your types>"
-Example: I prefer: singleplayer, multiplayer
-
-> I prefer: singleplayer
-I have just found something for you:
-- Minecraft(2011)
+Сейчас посмотрим что мы можем предложить...
+Рекомендованное оружие:
+- Glock-18
+- P250
+- Tec-9
+- Desert Eagle
+- Dual Berettas
+- CZ75-Auto
+- Galil AR
+- SSG 08
+- Negev
+- Nova
+- XM1014
+- Sawed-Off
+- Flashbang
+- HE Grenade
+- Smoke Grenade
+- Molotov
+- Decoy Grenade
 ```
 
 --- 
@@ -141,19 +132,30 @@ I have just found something for you:
 Примеры запросов непосредственно к базе знаний в Prolog:
 
 ```
-game('Factorio').
+Найти все пистолеты.
+?-weapon_type(X, pistol).
+X = "Glock-18"
 
-game(Game).
+Найти все снайперские винтовки для КТ.
+?- weapon_type(X, sniper), weapon_side(X, counter_terrorists).
+X = "SCAR-20" .
 
-game_genre('Factorio', Genre).
+Найти альтернативу AK-47 для КТ.
+?- alternative_weapon("AK-47", X).
+X = "M4A4" .
 
-Найти первую попавшуюся игру с годом выпуска 2016 и на ПК
-game(Game), game_age(Game, 2016), game_platform(Game, pc), !.
+Найти все оружие для эко раундов у террористов.
+?- eco_weapon(X), weapon_side(X, terrorists).
+X = "Glock-18" .
 
-Найти игру на платформе ПК или консоли и не жанра хоррор
-findall(Game, ((game_platform(Game, pc); game_platform(Game, console)), \+(game_genre(Game, horror))), Result),
-    sort(Result, Set).
+% Найти все пары оружия одного типа с разницей в цене более 1000$
+W1 = "Galil AR",
+Type = rifle,
+W2 = "M4A4",
+P1 = 1800,
+P2 = 3100 .
 ```
+Все примеры можно посмотреть в файле [requests](requests)
 
 Оценка соответствия проекта поставленным требованиям: реализованная система соответствует всем пунктам.
 

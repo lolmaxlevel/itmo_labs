@@ -1,2 +1,3 @@
 /algorithmsAndDataStructures/cmake-build-debug/
 *.idea
+*__pycache__

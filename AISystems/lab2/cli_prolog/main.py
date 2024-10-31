@@ -10,7 +10,6 @@ prolog = Prolog()
 prolog.consult("base.pl")
 def main():
     side, budget, weapon_type = get_user_input()
-    print(budget)
     print("Сейчас посмотрим что мы можем предложить...")
     time.sleep(1.5)
     recommendations = recommend_weapons(side, budget, weapon_type)
