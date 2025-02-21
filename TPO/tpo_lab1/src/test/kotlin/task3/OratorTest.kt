@@ -70,4 +70,10 @@ class OratorTest {
         assertFalse(orator.isSpeaking())
         assertTrue(crowd.isReacting()) // Crowd should still be reacting
     }
+
+    @Test
+    fun `test default orator name`() {
+        val defaultOrator = Orator()
+        assertEquals("Orator", defaultOrator.getName())
+    }
 }

@@ -32,8 +32,11 @@ class CrowdTest {
     @Test
     fun `test crowd at maximum capacity`() {
         val crowd = Crowd()
+        var person: Person
         repeat(100) { index ->
-            crowd.addPerson(Person("Person$index"))
+            person = Person("Person$index")
+            person.getName()
+            crowd.addPerson(person)
         }
 
         assertFailsWith<IllegalArgumentException> {
@@ -74,5 +77,22 @@ class CrowdTest {
         val person = Person("NewPerson")
         crowd.addPerson(person)
         assertEquals(1, crowd.getPeopleCount())
+    }
+
+    @Test
+    fun `test shout`() {
+        crowd.react()
+        crowd.shoutJoyfully()
+        assertTrue { crowd.isReacting() }
+    }
+
+    @Test
+    fun `test reacting when not all people reacting`() {
+        crowd.react()
+        crowd.addPerson(Person("NewPerson"))
+        assertFalse(crowd.isReacting())
+
+        crowd.shoutJoyfully()
+        assertFalse(crowd.isReacting())
     }
 }

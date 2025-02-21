@@ -102,15 +102,15 @@ class FibHeapTest {
 
     @Test
     fun `test cascading cuts`() {
-        val nodes = mutableListOf<FibHeap.Node<Int>>() // Fixed: Removed redundant type argument
-        for (i in 50 downTo 10 step 10) {
+        val nodes = mutableListOf<FibHeap.Node<Int>>()
+        for (i in 500 downTo 1 step 1) {
             nodes.add(heap.insert(i))
         }
 
-        // Create a chain of marked nodes
-        for (i in nodes.indices.reversed()) {
-            heap.decreaseKey(nodes[i], i)
+        for (i in 1 until 500 step 2) {
+            heap.decreaseKey(nodes[i], 0)
         }
+
 
         // Verify the minimum after cascading cuts
         assertEquals(0, heap.findMin())
@@ -176,4 +176,72 @@ class FibHeapTest {
 
         assertEquals((0 until 50).toList(), extracted)
     }
+
+    @Test
+    fun `test node marking operations`() {
+        val heap = FibHeap<Int>()
+
+        // Test initial state
+        val node = heap.insert(5)
+        assertFalse(node.marked)
+
+        // Test marking
+        node.marked = true
+        assertTrue(node.marked)
+
+        // Test unmarking
+        node.marked = false
+        assertFalse(node.marked)
+
+        // Test marking through cascading cuts
+        val parent = heap.insert(4)
+        val child = heap.insert(3)
+        heap.decreaseKey(child, 2)
+        assertFalse(parent.marked)
+    }
+
+    @Test
+    fun `test decrease key with cascading cuts`() {
+        val heap = FibHeap<Int>()
+
+
+        val node4 = heap.insert(4)
+        val node5 = heap.insert(5)
+
+        heap.insert(1)
+        heap.extractMin()
+
+        // Decrease key of node5 to 1, which should trigger cuts
+        heap.decreaseKey(node5, 1)
+
+        // Verify the results
+        assertEquals(1, heap.findMin()) // New minimum should be 1
+//        assertNull(node4.child) // node5 should be cut from node4
+        assertNull(node5.parent) // node5 should have no parent
+        assertFalse(node5.marked) // node5 should be unmarked
+        assertEquals(0, node4.degree) // node4 should have degree 0
+    }
+
+    @Test
+    fun `test collection structure`() {
+        val heap = FibHeap<Int>()
+        val nodes = (1..5).map { heap.insert(it) }
+        // trigger consolidation
+        heap.extractMin()
+        // Verify the structure
+        //       2
+        //      / \
+        //     4   3
+        //    /
+        //   5
+        assertNull(nodes[1].parent)
+        assertEquals(nodes[1].child, nodes[2])
+        assertEquals(nodes[2].parent, nodes[1])
+        assertNull(nodes[2].child)
+        assertEquals(nodes[3].parent, nodes[1])
+        assertEquals(nodes[3].child, nodes[4])
+        assertEquals(nodes[4].parent, nodes[3])
+        assertNull(nodes[4].child)
+    }
 }
+

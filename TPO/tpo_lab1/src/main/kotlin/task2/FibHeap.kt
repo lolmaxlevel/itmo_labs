@@ -3,7 +3,7 @@ package task2
 class FibHeap<T : Comparable<T>> {
     class Node<T : Comparable<T>>(var key: T) {
         var left: Node<T> = this
-        var right: Node<T> = this
+        var right: Node<T>? = this
         var parent: Node<T>? = null
         var child: Node<T>? = null
         var degree: Int = 0
@@ -12,13 +12,15 @@ class FibHeap<T : Comparable<T>> {
         fun addToList(node: Node<T>) {
             node.right = this.right
             node.left = this
-            this.right.left = node
+            this.right!!.left = node
             this.right = node
         }
 
         fun removeFromList() {
-            left.right = right
-            right.left = left
+            this.left.right = this.right
+            this.right!!.left = this.left
+            this.left = this
+            this.right = this
         }
     }
 
@@ -29,11 +31,11 @@ class FibHeap<T : Comparable<T>> {
 
     fun insert(key: T): Node<T> {
         val node = Node(key)
-        min = if (min == null) {
-            node
+        if (min == null) {
+            min = node
         } else {
             min!!.addToList(node)
-            if (node.key < min!!.key) node else min
+            if (node.key < min!!.key) min = node
         }
         size++
         return node
@@ -44,24 +46,23 @@ class FibHeap<T : Comparable<T>> {
     fun extractMin(): T? {
         val minNode = min ?: return null
 
-        // Handle children of min node
+        // Перемещаем детей minNode в корневой список
         minNode.child?.let { child ->
             var current = child
             do {
                 val next = current.right
                 min!!.addToList(current)
                 current.parent = null
-                current = next
+                current = next!!
             } while (current != child)
         }
 
-        // Remove min from root list
-        if (minNode === minNode.right) {
+        // Удаляем minNode из корневого списка
+        if (minNode == minNode.right) {
             min = null
         } else {
-            val next = minNode.right
+            min = minNode.right
             minNode.removeFromList()
-            min = next
             consolidate()
         }
 
@@ -69,83 +70,20 @@ class FibHeap<T : Comparable<T>> {
         return minNode.key
     }
 
-    fun union(other: FibHeap<T>): FibHeap<T> {
-        val result = FibHeap<T>()
-        result.min = this.min
-
-        if (this.min == null) {
-            result.min = other.min
-        } else if (other.min != null) {
-            val thisRight = this.min!!.right
-            val otherLeft = other.min!!.left
-
-            this.min!!.right = other.min!!
-            other.min!!.left = this.min!!
-            thisRight.left = otherLeft
-            otherLeft.right = thisRight
-
-            if (other.min!!.key < this.min!!.key) {
-                result.min = other.min
-            }
-        }
-
-        result.size = this.size + other.size
-        return result
-    }
-
-    fun decreaseKey(node: Node<T>, newKey: T) {
-        require(newKey <= node.key) { "New key must be less than current key" }
-
-        node.key = newKey
-        val parent = node.parent
-
-        if (parent != null && node.key < parent.key) {
-            cut(node, parent)
-            cascadingCut(parent)
-        }
-
-        if (min == null || node.key < min!!.key) {
-            min = node
-        }
-    }
-
-    private fun cut(child: Node<T>, parent: Node<T>) {
-        if (parent.child === child) {
-            parent.child = if (child.right === child) null else child.right
-        }
-        child.removeFromList()
-        parent.degree--
-
-        min!!.addToList(child)
-        child.parent = null
-        child.marked = false
-    }
-
-    private fun cascadingCut(node: Node<T>) {
-        val parent = node.parent
-        if (parent != null) {
-            if (!node.marked) {
-                node.marked = true
-            } else {
-                cut(node, parent)
-                cascadingCut(parent)
-            }
-        }
-    }
-
     private fun consolidate() {
         val maxDegree = (kotlin.math.log2(size.toFloat()) * 2).toInt() + 1
         val degreeArray = arrayOfNulls<Node<T>>(maxDegree)
 
-        // Collect all roots
+        // Собираем все корни
         val roots = mutableListOf<Node<T>>()
-        var current = min
+        var current = min!!
+
         do {
-            roots.add(current!!)
-            current = current.right
+            roots.add(current)
+            current = current.right!!
         } while (current != min)
 
-        // Process all roots
+        // Объединяем деревья с одинаковой степенью
         for (root in roots) {
             var x = root
             var d = x.degree
@@ -157,7 +95,6 @@ class FibHeap<T : Comparable<T>> {
                     x = y
                     y = temp
                 }
-
                 link(y, x)
                 degreeArray[d] = null
                 d++
@@ -165,19 +102,17 @@ class FibHeap<T : Comparable<T>> {
             degreeArray[d] = x
         }
 
-        // Rebuild root list
+        // Восстанавливаем корневой список и находим новый min
         min = null
         for (node in degreeArray) {
-            if (node != null) {
+            node?.let {
                 if (min == null) {
                     min = node
                     node.left = node
                     node.right = node
                 } else {
                     min!!.addToList(node)
-                    if (node.key < min!!.key) {
-                        min = node
-                    }
+                    if (node.key < min!!.key) min = node
                 }
             }
         }
@@ -185,15 +120,54 @@ class FibHeap<T : Comparable<T>> {
 
     private fun link(child: Node<T>, parent: Node<T>) {
         child.removeFromList()
-        if (parent.child == null) {
+        parent.child?.let {
+            it.addToList(child)
+        } ?: run {
             parent.child = child
             child.right = child
             child.left = child
-        } else {
-            parent.child!!.addToList(child)
         }
         child.parent = parent
         parent.degree++
         child.marked = false
+    }
+
+    fun decreaseKey(node: Node<T>, newKey: T) {
+        require(newKey <= node.key) { "New key must be less than current key" }
+        node.key = newKey
+        val parent = node.parent
+
+        if (parent != null) {
+            cut(node, parent)
+        }
+        if (node.key < min!!.key) min = node
+    }
+
+    private fun cut(child: Node<T>, parent: Node<T>) {
+        parent.child = child.right
+        child.removeFromList()
+        parent.degree--
+        child.parent = null
+        child.marked = false
+    }
+
+    fun union(other: FibHeap<T>): FibHeap<T> {
+        val result = FibHeap<T>()
+        when {
+            this.min == null -> result.min = other.min
+            other.min == null -> result.min = this.min
+            else -> {
+                val thisRight = this.min!!.right
+                val otherLeft = other.min!!.left
+
+                this.min!!.right = other.min
+                other.min!!.left = this.min!!
+                otherLeft.right = thisRight
+
+                result.min = if (this.min!!.key < other.min!!.key) this.min else other.min
+            }
+        }
+        result.size = this.size + other.size
+        return result
     }
 }
