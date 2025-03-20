@@ -1,9 +1,11 @@
 package org.lolmaxlevel.logarithmic
 
 class LogWithBase(
-    private val ln: Ln = Ln()
-) {
-    fun calculate(x: Double, base: Double, epsilon: Double = 1e-10): Double {
+    private val ln: LogarithmicFunc = Ln(),
+    private val base: Double
+) : LogarithmicFunc {
+
+    override fun calculate(x: Double, epsilon: Double): Double {
         require(x > 0) { "Logarithm is undefined for non-positive values" }
         require(base > 0) { "Base must be positive" }
         require(base != 1.0) { "Base must not be equal to 1" }

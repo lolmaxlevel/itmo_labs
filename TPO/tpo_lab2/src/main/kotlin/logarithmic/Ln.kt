@@ -2,13 +2,13 @@ package org.lolmaxlevel.logarithmic
 
 import kotlin.math.abs
 
-class Ln {
+class Ln : LogarithmicFunc {
     //  ln(NaN) is NaN
     //  ln(x) is NaN when x < 0.0
     //  ln(+Inf) is +Inf
     //  ln(0.0) is -Inf
 
-    fun calculate(x: Double, epsilon: Double = 1e-10): Double {
+    override fun calculate(x: Double, epsilon: Double): Double {
         require(x > 0) { "Natural logarithm is undefined for non-positive values" }
         require(epsilon > 0) { "Epsilon must be positive" }
 

@@ -1,6 +1,7 @@
 package integration
 
 import org.lolmaxlevel.Utils
+import org.lolmaxlevel.logarithmic.LogarithmicFunc
 import org.lolmaxlevel.trigonometric.TrigFunc
 import kotlin.math.PI
 import kotlin.math.abs
@@ -71,7 +72,7 @@ class CscStub : TrigFunc {
     }
 }
 
-class LnStub : TrigFunc {
+class LnStub : LogarithmicFunc {
     val name = "Ln"
     private val csvFileName = "ln.csv"
 
@@ -81,7 +82,7 @@ class LnStub : TrigFunc {
     }
 }
 
-class Log2Stub : TrigFunc {
+class Log2Stub : LogarithmicFunc {
     val name = "Log2"
     private val csvFileName = "log2.csv"
 
@@ -91,7 +92,7 @@ class Log2Stub : TrigFunc {
     }
 }
 
-class Log5Stub : TrigFunc {
+class Log5Stub : LogarithmicFunc {
     val name = "Log5"
     private val csvFileName = "log5.csv"
 
@@ -101,7 +102,7 @@ class Log5Stub : TrigFunc {
     }
 }
 
-class Log10Stub : TrigFunc {
+class Log10Stub : LogarithmicFunc {
     val name = "Log10"
     private val csvFileName = "log10.csv"
 
