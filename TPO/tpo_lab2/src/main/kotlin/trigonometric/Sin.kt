@@ -3,8 +3,10 @@ package org.lolmaxlevel.trigonometric
 import kotlin.math.PI
 import kotlin.math.abs
 
-class Sin {
-    fun calculateSin(x: Double, epsilon: Double = 1e-10): Double {
+class Sin: TrigFunc {
+    override fun calculate(x: Double, epsilon: Double): Double {
+        require( epsilon > 0 ) { "epsilon must be greater than 0" }
+
         // Приводим x к диапазону [-π, π]
         var normalizedX = x % (2 * PI)
         if (normalizedX > PI) normalizedX -= 2 * PI

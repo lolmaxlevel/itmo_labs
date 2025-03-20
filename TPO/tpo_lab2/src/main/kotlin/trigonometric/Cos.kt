@@ -2,11 +2,12 @@ package org.lolmaxlevel.trigonometric
 
 import kotlin.math.PI
 
-class Cos {
-    private val sin = Sin()
+class Cos(private val sin: TrigFunc = Sin()) : TrigFunc {
+    override fun calculate(x: Double, epsilon: Double): Double {
+        require(x.isFinite()) { "x must be finite" }
+        require(epsilon > 0) { "epsilon must be greater than 0" }
 
-    fun calculateCos(x: Double, epsilon: Double = 1e-10): Double {
-        // Cosine can be computed as sine with phase shift of π/2
-        return sin.calculateSin(x + PI/2, epsilon)
+        // Cosine as sine with phase shift
+        return sin.calculate(x + PI / 2, epsilon)
     }
 }

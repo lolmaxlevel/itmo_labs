@@ -1,10 +1,10 @@
 package org.lolmaxlevel.trigonometric
 
-class Csc {
-    private val sin = Sin()
+class Csc(private val sin: TrigFunc = Sin()) : TrigFunc {
+    override fun calculate(x: Double, epsilon: Double): Double {
+        require(epsilon > 0) { "epsilon must be greater than 0" }
+        require(x % Math.PI != 0.0) { "x must not be a multiple of PI" }
 
-    fun calculateCsc(x: Double, epsilon: Double = 1e-10): Double {
-        // Cosecant can be computed as reciprocal of sine
-        return 1 / sin.calculateSin(x, epsilon)
+        return 1 / sin.calculate(x, epsilon)
     }
 }

@@ -1,11 +1,13 @@
 package org.lolmaxlevel.trigonometric
 
-class Tan {
-    private val sin = Sin()
-    private val cos = Cos()
+class Tan(
+    private val sin: TrigFunc = Sin(),
+    private val cos: TrigFunc = Cos(sin)
+) :TrigFunc{
+    override fun calculate(x: Double, epsilon: Double): Double {
+        require(epsilon > 0) { "epsilon must be greater than 0" }
+        require(x % Math.PI != Math.PI / 2) { "tan is not defined for x = PI/2 + k*PI" }
 
-    fun calculateTan(x: Double, epsilon: Double = 1e-10): Double {
-        // Tangent can be computed as sine divided by cosine
-        return sin.calculateSin(x, epsilon) / cos.calculateCos(x, epsilon)
+        return sin.calculate(x, epsilon) / cos.calculate(x, epsilon)
     }
 }
