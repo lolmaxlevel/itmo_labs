@@ -1,7 +1,7 @@
 package org.lolmaxlevel
 
-import org.lolmaxlevel.trigonometric.*
+import org.lolmaxlevel.logarithmic.Ln
 
 fun main() {
-    println(TrigonometricFunction().calculate(1.0))
+    Utils().createCsvFile("ln.csv", "ln", -10.0, 15.0, 0.001, 1e-10, Ln()::calculate)
 }

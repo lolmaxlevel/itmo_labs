@@ -77,6 +77,7 @@ class LnStub : LogarithmicFunc {
     private val csvFileName = "ln.csv"
 
     override fun calculate(x: Double, epsilon: Double): Double {
+        require(x > 0) { "Logarithm is undefined for non-positive values" }
         val tableValues = Utils().loadFromCsv(csvFileName)
         return tableValues.entries.minByOrNull { abs(it.key - x) }?.value ?: 0.0
     }
@@ -87,6 +88,7 @@ class Log2Stub : LogarithmicFunc {
     private val csvFileName = "log2.csv"
 
     override fun calculate(x: Double, epsilon: Double): Double {
+        require(x > 0) { "Logarithm is undefined for non-positive values" }
         val tableValues = Utils().loadFromCsv(csvFileName)
         return tableValues.entries.minByOrNull { abs(it.key - x) }?.value ?: 0.0
     }
@@ -97,6 +99,7 @@ class Log5Stub : LogarithmicFunc {
     private val csvFileName = "log5.csv"
 
     override fun calculate(x: Double, epsilon: Double): Double {
+        require(x > 0) { "Logarithm is undefined for non-positive values" }
         val tableValues = Utils().loadFromCsv(csvFileName)
         return tableValues.entries.minByOrNull { abs(it.key - x) }?.value ?: 0.0
     }
@@ -107,6 +110,7 @@ class Log10Stub : LogarithmicFunc {
     private val csvFileName = "log10.csv"
 
     override fun calculate(x: Double, epsilon: Double): Double {
+        require(x > 0) { "Logarithm is undefined for non-positive values" }
         val tableValues = Utils().loadFromCsv(csvFileName)
         return tableValues.entries.minByOrNull { abs(it.key - x) }?.value ?: 0.0
     }
