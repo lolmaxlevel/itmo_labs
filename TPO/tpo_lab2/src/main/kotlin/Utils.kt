@@ -8,6 +8,7 @@ class Utils {
         step: Double, epsilon: Double, function: (Double, Double) -> Double
     ) {
         val file = java.io.File(fileName)
+        file.parentFile?.mkdirs() // Create parent directories if they don't exist
         file.writeText("x,$functionName\n")
 
         var x = start
@@ -48,5 +49,53 @@ class Utils {
                 }
         }
         return result
+    }
+
+    fun createGraphFromCsv(
+        csvFileName: String,
+        outputImagePath: String,
+        title: String = "Function Graph",
+        xAxisLabel: String = "X",
+        yAxisLabel: String = "Y",
+        width: Int = 800,
+        height: Int = 600,
+        yMin: Double = -50.0,
+        yMax: Double = 50.0
+    ) {
+        // Load data from CSV
+        val dataMap = loadFromCsv(csvFileName)
+
+        // Prepare data for plotting
+        val xData = mutableListOf<Double>()
+        val yData = mutableListOf<Double>()
+
+        dataMap.forEach { (x, y) ->
+            if (y in yMin..yMax) {
+                xData.add(x)
+                yData.add(y)
+            }
+        }
+
+        val chart = org.knowm.xchart.XYChartBuilder()
+            .width(width)
+            .height(height)
+            .title(title)
+            .xAxisTitle(xAxisLabel)
+            .yAxisTitle(yAxisLabel)
+            .build()
+
+        // Add data series to chart
+        val series = chart.addSeries("f(x)", xData, yData)
+
+        series.lineStyle = org.knowm.xchart.style.lines.SeriesLines.NONE
+
+        // Save chart to file
+        org.knowm.xchart.BitmapEncoder.saveBitmap(
+            chart,
+            outputImagePath,
+            org.knowm.xchart.BitmapEncoder.BitmapFormat.PNG
+        )
+
+        println("Graph saved: $outputImagePath")
     }
 }

@@ -10,14 +10,16 @@ import kotlin.math.sin
 import kotlin.test.assertEquals
 
 class CscTest {
-    private val csc = Csc()
+    private val csc = Csc(
+        { x, _ -> sin(x) }
+    )
 
     @ParameterizedTest
     @DisplayName("Test csc function")
     @ValueSource(doubles = [PI/6, PI/4, PI/3, PI/2, 3*PI/2])
     fun testCsc(input: Double) {
         val expected = 1.0 / sin(input)
-        val result = csc.calculate(input)
+        val result = csc.calculate(input, 1e-10)
         assertEquals(expected, result, 1e-10)
     }
 
@@ -25,6 +27,6 @@ class CscTest {
     @DisplayName("Test illegal argument exception")
     @ValueSource(doubles = [0.0, PI, 2*PI, -PI])
     fun testIllegalArgumentException(input: Double) {
-        assertThrows<IllegalArgumentException> { csc.calculate(input) }
+        assertThrows<IllegalArgumentException> { csc.calculate(input, 1e-10) }
     }
 }

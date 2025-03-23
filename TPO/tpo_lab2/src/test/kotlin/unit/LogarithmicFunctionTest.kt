@@ -11,7 +11,12 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class LogarithmicFunctionTest {
-    private val logFunction = LogarithmicFunction()
+    private val logFunction = LogarithmicFunction(
+        { x, _ -> kotlin.math.ln(x) },
+        {x, _ -> kotlin.math.log2(x)},
+        {x, _ -> kotlin.math.log(x, 5.0)},
+        {x, _ -> kotlin.math.log10(x)}
+    )
 
     @ParameterizedTest
     @DisplayName("Test logarithmic function at critical points")

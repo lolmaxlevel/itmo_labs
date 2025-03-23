@@ -1,5 +1,5 @@
 package org.lolmaxlevel.logarithmic
 
-interface LogarithmicFunc {
-    fun calculate(x: Double, epsilon: Double = 1e-10): Double
+fun interface LogarithmicFunc {
+    fun calculate(x: Double, epsilon: Double): Double
 }

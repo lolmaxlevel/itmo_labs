@@ -14,7 +14,7 @@ class LnTest {
     @ParameterizedTest
     @ValueSource(doubles = [1.0, 2.718281828459045, 0.5, 0.1])
     fun testLnAgainstStandardLibrary(input: Double) {
-        assertEquals(ln(input), myLn.calculate(input), 1e-6)
+        assertEquals(ln(input), myLn.calculate(input, 1e-10), 1e-6)
     }
 
 
@@ -22,14 +22,14 @@ class LnTest {
     @ValueSource(doubles = [-1.0, -2.0, -3.0, -100.0])
     fun testLnWithNegativeInput(input: Double) {
         assertFailsWith<IllegalArgumentException> {
-            myLn.calculate(input)
+            myLn.calculate(input, 1e-10)
         }
     }
 
     @Test
     fun testLnWithZeroInput() {
         assertFailsWith<IllegalArgumentException> {
-            myLn.calculate(0.0)
+            myLn.calculate(0.0, 1e-10)
         }
     }
 }

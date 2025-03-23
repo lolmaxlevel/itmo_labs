@@ -9,14 +9,17 @@ import kotlin.math.tan
 import kotlin.test.assertEquals
 
 class TanTest {
-    private val tan = Tan()
+    private val tan = Tan(
+        { x, _ -> kotlin.math.sin(x) },
+        { x, _ -> kotlin.math.cos(x) }
+    )
 
     @ParameterizedTest
     @DisplayName("Test tan function")
     @ValueSource(doubles = [0.0, PI/6, PI/4, PI/3, 3*PI/4, 5*PI/4, 7*PI/4])
     fun testTan(input: Double) {
         val expected = tan(input)
-        val result = tan.calculate(input)
+        val result = tan.calculate(input, 1e-10)
         assertEquals(expected, result, 1e-6)
     }
 
@@ -25,7 +28,7 @@ class TanTest {
     @ValueSource(doubles = [PI/2, 3*PI/2])
     fun testTanIllegalArgument(input: Double) {
         assertThrows<IllegalArgumentException> {
-            tan.calculate(input)
+            tan.calculate(input, 1e-10)
         }
     }
 }

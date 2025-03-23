@@ -16,7 +16,7 @@ class SinTest {
     @ValueSource(doubles = [0.0, PI/6, PI/4, PI/3, PI/2, PI, 3*PI/2, 2*PI])
     fun testSinAtCriticalPoints(input: Double) {
         val expected = sin(input)
-        val result = mySin.calculate(input)
+        val result = mySin.calculate(input, 1e-10)
         assertEquals(expected, result, 1e-10)
     }
 }

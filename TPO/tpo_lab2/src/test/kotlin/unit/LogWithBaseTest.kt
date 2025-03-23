@@ -25,7 +25,7 @@ class LogWithBaseTest {
     )
     fun testLogWithBase(value: Double, base: Double, expected: Double) {
         val logWithBase = LogWithBase(ln, base)
-        val result = logWithBase.calculate(value)
+        val result = logWithBase.calculate(value, 1e-10)
         assertEquals(expected, result, 1e-6)
 
         // Verify against standard library using change of base formula
