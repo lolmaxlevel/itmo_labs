@@ -43,7 +43,7 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
         // Wait for dropdown to appear with explicit wait
         wait.until(
             ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//label[contains(text(), 'LED')]")
+                By.xpath("//label[@data-qa-file='LocationCodeLabel']")
             )
         )
         sendEnter(searchFromField)
@@ -53,9 +53,10 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
         // Wait for dropdown to appear with explicit wait
         wait.until(
             ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//label[contains(text(), 'MOW')]")
+                By.xpath("//label[@data-qa-file='LocationCodeLabel']")
             )
         )
+        Thread.sleep(1000)
         sendEnter(searchDestinationField)
         return this
     }
@@ -93,8 +94,7 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
 
 class SearchResultsPage(driver: WebDriver) : BasePage(driver) {
     // XPath selectors
-    private val resultsList =
-        "/html/body/div[1]/div/div/div[3]/div[3]/div[2]/div[4]/div/div[2]/div/div/div/div/div/div/div/div"
+    private val resultsList = "//div[@data-qa-file='VirtualList']/div[@data-qa-file='FlightRoutesListPanel']"
     private val filterPanel = "//div[contains(@class, 'filter-panel')]"
     private val loading = "//div[contains(text(), 'Ищем лучшие предложения')]"
 

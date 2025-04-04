@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxOptions
 
 enum class BrowserType {
     CHROME,
-    FIREFOX
+//    FIREFOX
 }
 
 class WebDriverFactory {
@@ -23,11 +23,11 @@ class WebDriverFactory {
                     options.addArguments("disable-notifications")
                     ChromeDriver(options)
                 }
-                BrowserType.FIREFOX -> {
-                    WebDriverManager.firefoxdriver().browserInDocker()
-                    val options = FirefoxOptions()
-                    FirefoxDriver(options)
-                }
+//                BrowserType.FIREFOX -> {
+//                    WebDriverManager.firefoxdriver().browserInDocker()
+//                    val options = FirefoxOptions()
+//                    FirefoxDriver(options)
+//                }
             }
         }
     }

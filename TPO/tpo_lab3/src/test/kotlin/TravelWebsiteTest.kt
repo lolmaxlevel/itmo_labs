@@ -55,6 +55,28 @@ class TravelWebsiteTest {
         assertTrue(resultsPage.getResultsCount() > 4, "Search results should be more than 4")
     }
 
+    @ParameterizedTest
+    @EnumSource(BrowserType::class)
+    fun testSearchFunctionalityWithWrongDestination(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val resultsPage = homePage
+            .clickHotelsSwitch()
+            .enterDestination("LED", "MFA")
+            .enterDates(
+                startDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("ddMMyyyy")),
+                endDate = LocalDate.now().plusDays(7).format(DateTimeFormatter.ofPattern("ddMMyyyy"))
+            )
+            .clickSearchButton()
+
+        assertTrue(resultsPage.isPageLoaded(), "Search results page should be loaded")
+        assertTrue(resultsPage.getResultsCount() == 0, "Search results should be more than 4")
+    }
+
 
     @ParameterizedTest
     @EnumSource(BrowserType::class)
