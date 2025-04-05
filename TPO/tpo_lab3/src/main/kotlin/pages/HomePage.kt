@@ -23,6 +23,8 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
     private val searchButton = "//span[@class='travelsearchform__fCnYdD']"
     private val travelTypeTabs = "//ul[@class='dbYvsSvwF']"
 
+    private val isError = "//div[starts-with(@data-qa-type,'Suggest_not-focused_error')]"
+
     fun open(): HomePage {
         driver.get(url)
         return this
@@ -35,6 +37,10 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
 
     fun isNewSearchBox(): Boolean {
         return isElementDisplayed(newSearchBox)
+    }
+
+    fun isMissingInputField(): Boolean {
+        return isElementDisplayed(isError)
     }
 
     fun enterDestination(from: String, to: String): HomePage {
@@ -74,6 +80,11 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
     fun clickSearchButton(): SearchResultsPage {
         clickElement(searchButton)
         return SearchResultsPage(driver)
+    }
+
+    fun clickSearchButtonNoRedirect(): HomePage {
+        clickElement(searchButton)
+        return this
     }
 
     fun selectTravelType(index: Int): BasePage {

@@ -77,6 +77,22 @@ class TravelWebsiteTest {
         assertTrue(resultsPage.getResultsCount() == 0, "Search results should be more than 4")
     }
 
+    @ParameterizedTest
+    @EnumSource
+    fun testSearchWithoutFromAndTo(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val resultsPage = homePage
+            .clickHotelsSwitch()
+            .clickSearchButtonNoRedirect()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+        assertTrue(resultsPage.isMissingInputField(), "red funny elements should be displayed")
+    }
+
 
     @ParameterizedTest
     @EnumSource(BrowserType::class)

@@ -20,7 +20,7 @@ class WebDriverFactory {
                 BrowserType.CHROME -> {
                     WebDriverManager.chromedriver().browserInDocker()
                     val options = ChromeOptions()
-                    options.addArguments("disable-notifications")
+                    options.addArguments("disable-notifications", "start-maximized")
                     ChromeDriver(options)
                 }
 //                BrowserType.FIREFOX -> {

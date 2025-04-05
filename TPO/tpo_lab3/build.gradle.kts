@@ -33,5 +33,5 @@ tasks.test {
     systemProperty("junit.jupiter.execution.parallel.mode.default", "concurrent")
 }
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(22)
 }
