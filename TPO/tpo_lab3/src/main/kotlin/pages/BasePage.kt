@@ -44,11 +44,6 @@ abstract class BasePage(protected val driver: WebDriver) {
         element.sendKeys(Keys.ENTER)
     }
 
-    protected fun sendBackspace(xpath: String) {
-        val element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)))
-        element.sendKeys(Keys.DELETE)
-    }
-
     protected fun isElementDisplayed(xpath: String): Boolean {
         return try {
             findElementByXPath(xpath).isDisplayed

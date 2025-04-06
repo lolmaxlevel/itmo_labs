@@ -1,15 +1,13 @@
 package org.lolmaxlevel.tests
 
 import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.EnumSource
 import org.lolmaxlevel.driver.BrowserType
 import org.lolmaxlevel.driver.WebDriverFactory
 import org.lolmaxlevel.pages.HomePage
-import org.lolmaxlevel.pages.HotelsPage
-import org.lolmaxlevel.pages.ToursPage
-import org.lolmaxlevel.pages.TrainPage
+import org.lolmaxlevel.pages.HotelsPage import org.lolmaxlevel.pages.TrainPage
 import org.openqa.selenium.WebDriver
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -93,6 +91,27 @@ class TravelWebsiteTest {
         assertTrue(resultsPage.isMissingInputField(), "red funny elements should be displayed")
     }
 
+    @ParameterizedTest
+    @EnumSource
+    fun testSearchWithRedirect(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        homePage
+//            .clickHotelsSwitch()
+            .enterDestination("Санкт-Петербург", "Москва")
+            .enterDates(
+                startDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("ddMMyyyy")),
+                endDate = LocalDate.now().plusDays(7).format(DateTimeFormatter.ofPattern("ddMMyyyy"))
+            )
+            .clickSearchButton()
+
+        assertTrue(driver!!.windowHandles.size > 1, "New window should be opened")
+    }
+
 
     @ParameterizedTest
     @EnumSource(BrowserType::class)
@@ -117,6 +136,86 @@ class TravelWebsiteTest {
 
         assertTrue(resultsPage.isPageLoaded(), "Hotels search results page should be loaded")
         assertTrue(resultsPage.getResultsCount() > 0, "Hotel search should return results")
+    }
+
+    @ParameterizedTest
+    @EnumSource(BrowserType::class)
+    fun testHotelFilterFunctionality(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val hotelsPage = homePage.selectTravelType(2) as HotelsPage
+        assertTrue(hotelsPage.isPageLoaded(), "Hotels page should be loaded")
+
+        val resultsPage = hotelsPage
+            .enterDestination("Москва")
+            .enterDates(
+                startDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                endDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+
+            )
+            .clickSearchButton()
+
+        val notFiltered = resultsPage.getActualResultsCount()
+
+        val filtered = resultsPage
+            .clickFiveStarFilter().getActualResultsCount()
+
+        assertTrue(filtered > 10, "Five star filter should return more than 10 results")
+        assertTrue(notFiltered > filtered, "Five star filter should return less results")
+        assertTrue(resultsPage.isEveryFiveStarHotel(), "All hotels should be five star")
+    }
+
+    @ParameterizedTest
+    @EnumSource
+    fun testRedirectOnHotelClick(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val hotelsPage = homePage.selectTravelType(2) as HotelsPage
+        assertTrue(hotelsPage.isPageLoaded(), "Hotels page should be loaded")
+
+        val resultsPage = hotelsPage
+            .enterDestination("Москва")
+            .enterDates(
+                startDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                endDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+            )
+            .clickSearchButton()
+        assertTrue(resultsPage.isRedirected())
+    }
+
+    @ParameterizedTest
+    @EnumSource
+    fun testBarFilter(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val hotelsPage = homePage.selectTravelType(2) as HotelsPage
+        assertTrue(hotelsPage.isPageLoaded(), "Hotels page should be loaded")
+
+        val resultsPage = hotelsPage
+            .enterDestination("Москва")
+            .enterDates(
+                startDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                endDate = LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+            )
+            .clickSearchButton()
+
+        resultsPage.clickBarFilter()
+        val hotelPage = resultsPage.clickHotelCard()
+
+        assertTrue(hotelPage.isPageLoaded(), "Hotel page should be loaded")
+        assertTrue(hotelPage.isBarFacilityPresent(), "Hotel should have bar facility")
     }
 
     @ParameterizedTest
