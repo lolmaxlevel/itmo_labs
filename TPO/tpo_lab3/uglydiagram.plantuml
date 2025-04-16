@@ -1,0 +1,111 @@
+@startuml TravelWebsiteTestCases
+
+actor "User" as user
+
+rectangle "Travel Website System" {
+  package "Common Actions" {
+    usecase "Open Home Page" as UC1
+    usecase "Verify Page Elements" as UC1.1
+    usecase "Select Travel Type" as UC1.2
+  }
+
+  package "Hotel Booking Module" {
+    usecase "Enter Hotel Destination" as H1
+    usecase "Select Check-in/Check-out Dates" as H2
+    usecase "Click Search Button" as H3
+    usecase "View Hotel Results" as H4
+
+    package "Hotel Filtering" {
+      usecase "Apply 5-Star Filter" as H5
+      usecase "Verify 5-Star Results" as H6
+      usecase "Apply Bar Facility Filter" as H7
+      usecase "Compare Results Count" as H8
+    }
+
+    package "Hotel Details" {
+      usecase "Click Hotel Card" as H9
+      usecase "Switch to New Window" as H10
+      usecase "View Hotel Details" as H11
+      usecase "Verify Bar Facility Present" as H12
+    }
+  }
+
+  package "Railway Module" {
+    usecase "Enter Train Origin/Destination" as R1
+    usecase "Search for Trains" as R2
+    usecase "View Train Results" as R3
+  }
+
+  package "Error Cases" {
+    usecase "Enter Invalid Location" as E1
+    usecase "Attempt Search Without Required Fields" as E2
+    usecase "Verify Error Messages" as E3
+  }
+}
+
+' Basic flow
+UC1 --> UC1.1
+UC1 --> UC1.2
+UC1.2 --> H1
+UC1.2 --> R1
+UC1.2 --> E1
+UC1.2 --> E2
+
+' Hotel flow
+H1 --> H2
+H2 --> H3
+H3 --> H4
+H4 --> H5
+H5 --> H6
+H5 --> H8
+H4 --> H7
+H7 --> H9
+H9 --> H10
+H10 --> H11
+H11 --> H12
+
+' Railway flow
+R1 --> R2
+R2 --> R3
+
+' Error flow
+E1 --> H3
+E1 --> E3
+E2 --> E3
+
+' User associations
+user --> UC1
+user --> UC1.2
+user --> H1
+user --> H2
+user --> H3
+user --> H5
+user --> H7
+user --> H9
+user --> R1
+user --> R2
+user --> E1
+user --> E2
+
+note bottom of H4
+  System displays list of hotels
+  matching search criteria
+end note
+
+note right of H9
+  System opens hotel details
+  in a new browser tab
+end note
+
+note right of H12
+  Verify that hotels with bar
+  filter applied actually have
+  bar facility in details page
+end note
+
+note right of E3
+  System displays red validation
+  messages for missing fields
+end note
+
+@enduml
