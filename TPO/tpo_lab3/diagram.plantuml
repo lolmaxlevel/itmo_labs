@@ -1,0 +1,77 @@
+@startuml TravelWebsiteUseCases
+
+actor "User" as user
+
+usecase "Open Home Page" as UC1
+
+package "Travel Type Selection" {
+  usecase "Select Hotel Booking" as T1
+  usecase "Select Airlines" as T2
+  usecase "Select Railway Tickets" as T3
+}
+
+package "Hotel Booking Module" {
+  usecase "Enter Hotel Destination" as H1
+  usecase "Select Check-in/Check-out Dates" as H2
+  usecase "Click Search Button" as H3
+  usecase "View Hotel Results" as H4
+  usecase "Apply 5-Star Filter" as H5
+  usecase "Apply Bar Facility Filter" as H6
+  usecase "View Hotel Details" as H7
+}
+
+package "Railway Module" {
+  usecase "Enter Train Origin/Destination" as R1
+  usecase "Search for Trains" as R2
+  usecase "View Train Results" as R3
+}
+
+package "Airlines Module" {
+  usecase "View Popular Directions" as A1
+  usecase "Select Popular Direction" as A2
+  usecase "View Flight Options" as A3
+  usecase "View Airlines List" as A4
+  usecase "Select Specific Airline" as A5
+}
+
+package "Error Scenarios" {
+  usecase "Enter Invalid Location" as E1
+  usecase "Submit Form with Missing Fields" as E2
+}
+
+' Tree structure starting from home page
+user --> UC1
+
+UC1 --> T1
+UC1 --> T2
+UC1 --> T3
+
+' Hotel branch
+T1 --> H1
+H1 --> H2
+H2 --> H3
+H3 --> H4
+H4 --> H5
+H4 --> H6
+H5 --> H7
+H6 --> H7
+
+' Railway branch
+T3 --> R1
+R1 --> R2
+R2 --> R3
+
+' Airlines branches
+T2 --> A1
+T2 --> A4
+A1 --> A2
+A2 --> A3
+A4 --> A5
+A5 --> A3
+
+' Error scenarios
+H3 ..> "<<include>>" E1
+H3 ..> "<<include>>" E2
+
+
+@enduml

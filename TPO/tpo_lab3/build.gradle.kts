@@ -31,6 +31,8 @@ tasks.test {
     // Enable parallel execution
     systemProperty("junit.jupiter.execution.parallel.enabled", "true")
     systemProperty("junit.jupiter.execution.parallel.mode.default", "concurrent")
+    systemProperty("junit.jupiter.execution.parallel.mode.classes.default", "concurrent")
+
 }
 kotlin {
     jvmToolchain(22)

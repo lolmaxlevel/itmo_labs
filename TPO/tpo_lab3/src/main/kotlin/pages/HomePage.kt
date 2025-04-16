@@ -88,13 +88,14 @@ class HomePage(driver: WebDriver) : BasePage(driver) {
     }
 
     fun selectTravelType(index: Int): BasePage {
-        val indexMap = mapOf(2 to 2, 4 to 3)
+        val indexMap = mapOf(1 to 1,2 to 2, 4 to 3)
         if (isElementDisplayed(travelTypeTabs)) {
             clickElement("$travelTypeTabs/li[${index}]")
         } else {
             clickElement("//div[count(div)=6]/div[${indexMap[index]}]/div[1]/div/div[1]/a[1]")
         }
         return when (index) {
+            1 -> AirlinesPage(driver)   // Airlines
             2 -> HotelsPage(driver)    // Hotels
             4 -> TrainPage(driver)     // Railway
             5 -> ToursPage(driver)     // Tours

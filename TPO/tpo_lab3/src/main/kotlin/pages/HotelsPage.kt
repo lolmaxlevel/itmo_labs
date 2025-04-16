@@ -154,13 +154,27 @@ class HotelsPage(driver: WebDriver) : BasePage(driver) {
             return true
         }
 
+
         fun isRedirected(): Boolean {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(hotelRating)))
-            val hotelCardElement = driver.findElement(By.xpath(hotelCardLink))
+            val originalWindow = driver.windowHandle
             val originalUrl = driver.currentUrl
+
+            // Click the hotel card
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(hotelCardLink)))
+            val hotelCardElement = driver.findElement(By.xpath(hotelCardLink))
             hotelCardElement.click()
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(), 'Удобства отеля')]")))
+
+            wait.until { driver.windowHandles.size > 1 }
+
+            for (windowHandle in driver.windowHandles) {
+                if (windowHandle != originalWindow) {
+                    driver.switchTo().window(windowHandle)
+                    break
+                }
+            }
+
             val newUrl = driver.currentUrl
+
             return originalUrl != newUrl
         }
 

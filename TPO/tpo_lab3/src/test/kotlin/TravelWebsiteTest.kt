@@ -6,19 +6,22 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.EnumSource
 import org.lolmaxlevel.driver.BrowserType
 import org.lolmaxlevel.driver.WebDriverFactory
+import org.lolmaxlevel.pages.AirlinesPage
 import org.lolmaxlevel.pages.HomePage
 import org.lolmaxlevel.pages.HotelsPage import org.lolmaxlevel.pages.TrainPage
 import org.openqa.selenium.WebDriver
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
+
 class TravelWebsiteTest {
     private var driver: WebDriver? = null
 
     @AfterEach
     fun tearDown() {
-        driver?.quit()
+        WebDriverFactory.quitDriver()
     }
+
 
     @ParameterizedTest
     @EnumSource(BrowserType::class)
@@ -99,7 +102,6 @@ class TravelWebsiteTest {
 
         homePage.open()
         assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
-
         homePage
 //            .clickHotelsSwitch()
             .enterDestination("Санкт-Петербург", "Москва")
@@ -235,6 +237,44 @@ class TravelWebsiteTest {
             .searchTrain()
         assertTrue(resultsPage.isPageLoaded(), "Railway tickets search results page should be loaded")
         assertTrue(resultsPage.getResultsCount() > 0, "Railway ticket search should return results")
+    }
+
+    @ParameterizedTest
+    @EnumSource(BrowserType::class)
+    fun testPopularDirections(browserType: BrowserType){
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val airlinesPage = homePage.selectTravelType(1) as AirlinesPage
+        assertTrue(airlinesPage.isPageLoaded(), "Airlines page should be loaded")
+
+        val firstDirection = airlinesPage.getFirstPopularDirectionText()
+        val resultsPage = airlinesPage
+            .clickFirstPopularDirection()
+        assertTrue(resultsPage.checkDirections(firstDirection[0], firstDirection[2]), "Directions should be correct")
+    }
+
+    @ParameterizedTest
+    @EnumSource(BrowserType::class)
+    fun testAirlinesList(browserType: BrowserType) {
+        driver = WebDriverFactory.getDriver(browserType)
+        val homePage = HomePage(driver!!)
+
+        homePage.open()
+        assertTrue(homePage.isPageLoaded(), "Home page should be loaded")
+
+        val airlinesPage = homePage.selectTravelType(1) as AirlinesPage
+        assertTrue(airlinesPage.isPageLoaded(), "Airlines page should be loaded")
+
+        val secondAirline = airlinesPage.getSecondAirline()
+
+        val resultsPage = airlinesPage
+            .clickSecondAirline()
+
+        assertTrue(resultsPage.isAirlineNameDisplayed(secondAirline), "Airline name should be displayed")
     }
 
 //    @ParameterizedTest
