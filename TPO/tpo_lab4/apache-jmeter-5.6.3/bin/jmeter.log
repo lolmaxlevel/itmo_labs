@@ -1,0 +1,1930 @@
+2025-04-24 00:37:59,783 INFO o.a.j.u.JMeterUtils: Setting Locale to ru_RU
+2025-04-24 00:37:59,790 ERROR o.a.j.u.JMeterUtils: Could not find resources for 'ru_RU'
+2025-04-24 00:37:59,791 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-04-24 00:37:59,791 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-04-24 00:37:59,795 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-04-24 00:37:59,795 INFO o.a.j.JMeter: Version 5.6.3
+2025-04-24 00:37:59,795 INFO o.a.j.JMeter: java.version=1.8.0_401
+2025-04-24 00:37:59,795 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: os.name=Windows 11
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: os.arch=amd64
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: os.version=10.0
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: file.encoding=Cp1251
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: java.awt.headless=null
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: Max memory     =7618953216
+2025-04-24 00:37:59,796 INFO o.a.j.JMeter: Available Processors =16
+2025-04-24 00:37:59,799 INFO o.a.j.JMeter: Default Locale=русский (Россия)
+2025-04-24 00:37:59,799 INFO o.a.j.JMeter: JMeter  Locale=русский (Россия)
+2025-04-24 00:37:59,799 INFO o.a.j.JMeter: JMeterHome=D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3
+2025-04-24 00:37:59,799 INFO o.a.j.JMeter: user.dir  =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
+2025-04-24 00:37:59,799 INFO o.a.j.JMeter: PWD       =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
+2025-04-24 00:37:59,801 INFO o.a.j.JMeter: IP: 192.168.31.109 Name: ilusha FullName: host.docker.internal
+2025-04-24 00:37:59,811 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-04-24 00:37:59,918 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-04-24 00:38:00,675 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,681 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,682 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,759 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,796 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,840 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,841 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,842 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,844 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,844 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:00,877 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.4.jar
+2025-04-24 00:38:00,877 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar
+2025-04-24 00:38:02,047 INFO o.a.j.JMeterGuiLauncher: Loading file: D:\itmo_labs\TPO\tpo_lab4\stress.jmx
+2025-04-24 00:38:02,049 INFO o.a.j.s.FileServer: Default base='D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin'
+2025-04-24 00:38:02,050 INFO o.a.j.s.FileServer: Set new base='D:\itmo_labs\TPO\tpo_lab4'
+2025-04-24 00:38:02,131 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-04-24 00:38:02,136 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-04-24 00:38:02,140 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-04-24 00:38:02,145 INFO o.a.j.s.SaveService: Loading file: D:\itmo_labs\TPO\tpo_lab4\stress.jmx
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-04-24 00:38:02,226 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-04-24 00:38:02,283 INFO o.a.j.s.FileServer: Set new base='D:\itmo_labs\TPO\tpo_lab4'
+2025-04-24 00:38:03,061 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-additional=2.0, jpgc-casutg=3.0, jpgc-graphs-vs=2.0, jpgc-plugins-manager=0.20, jmeter-core=5.6.3, jmeter-ftp=5.6.3, jmeter-http=5.6.3, jmeter-jdbc=5.6.3, jmeter-jms=5.6.3, jmeter-junit=5.6.3, jmeter-java=5.6.3, jmeter-ldap=5.6.3, jmeter-mail=5.6.3, jmeter-mongodb=5.6.3, jmeter-native=5.6.3, jmeter-tcp=5.6.3, jmeter-components=5.6.3]
+2025-04-24 00:38:03,062 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2025-04-24 00:38:28,889 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-04-24 00:38:28,890 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-04-24 00:38:28,890 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-04-24 00:38:28,890 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-04-24 00:38:28,890 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-04-24 00:38:29,036 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:29,037 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:29,038 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:29,041 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:29,041 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-04-24 00:38:29,048 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-04-24 00:38:29,172 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : stress
+2025-04-24 00:38:29,172 INFO o.a.j.e.StandardJMeterEngine: Starting 150 threads for group stress.
+2025-04-24 00:38:29,172 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-04-24 00:38:29,172 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=150 ramp-up=300 delayedStart=false
+2025-04-24 00:38:29,176 INFO o.a.j.t.JMeterThread: Thread started: stress 1-1
+2025-04-24 00:38:29,185 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ilusha
+2025-04-24 00:38:29,189 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-04-24 00:38:29,190 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-04-24 00:38:29,191 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-04-24 00:38:29,191 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-04-24 00:38:29,191 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-04-24 00:38:29,201 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-04-24 00:38:29,201 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-04-24 00:38:31,175 INFO o.a.j.t.JMeterThread: Thread started: stress 1-2
+2025-04-24 00:38:33,178 INFO o.a.j.t.JMeterThread: Thread started: stress 1-3
+2025-04-24 00:38:35,175 INFO o.a.j.t.JMeterThread: Thread started: stress 1-4
+2025-04-24 00:38:37,174 INFO o.a.j.t.JMeterThread: Thread started: stress 1-5
+2025-04-24 00:38:39,184 INFO o.a.j.t.JMeterThread: Thread started: stress 1-6
+2025-04-24 00:38:41,174 INFO o.a.j.t.JMeterThread: Thread started: stress 1-7
+2025-04-24 00:38:43,173 INFO o.a.j.t.JMeterThread: Thread started: stress 1-8
+2025-04-24 00:38:45,173 INFO o.a.j.t.JMeterThread: Thread started: stress 1-9
+2025-04-24 00:38:47,174 INFO o.a.j.t.JMeterThread: Thread started: stress 1-10
+2025-04-24 00:38:49,174 INFO o.a.j.t.JMeterThread: Thread started: stress 1-11
+2025-04-24 00:38:51,174 INFO o.a.j.t.JMeterThread: Thread started: stress 1-12
+2025-04-24 00:38:52,648 INFO o.a.j.g.a.Start: Stopping test
+2025-04-24 00:38:52,655 INFO o.a.j.t.JMeterThread: Stopping: stress 1-139
+2025-04-24 00:38:52,655 INFO o.a.j.t.JMeterThread: Stopping: stress 1-150
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Stopping: stress 1-46
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Thread started: stress 1-139
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Thread started: stress 1-150
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Stopping: stress 1-30
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Thread started: stress 1-46
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Stopping: stress 1-47
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Stopping: stress 1-55
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Thread started: stress 1-30
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-46
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread started: stress 1-47
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Stopping: stress 1-106
+2025-04-24 00:38:52,656 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-139
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread started: stress 1-55
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-150
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-30
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Stopping: stress 1-131
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-47
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Stopping: stress 1-41
+2025-04-24 00:38:52,657 INFO o.a.j.t.JMeterThread: Thread started: stress 1-106
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-55
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread started: stress 1-131
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Stopping: stress 1-39
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-106
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Stopping: stress 1-126
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread started: stress 1-41
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-131
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread started: stress 1-39
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Stopping: stress 1-105
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-41
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Stopping: stress 1-107
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread started: stress 1-126
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-39
+2025-04-24 00:38:52,658 INFO o.a.j.t.JMeterThread: Thread started: stress 1-105
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Thread started: stress 1-107
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-105
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Stopping: stress 1-115
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-107
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-126
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Stopping: stress 1-122
+2025-04-24 00:38:52,660 INFO o.a.j.t.JMeterThread: Stopping: stress 1-33
+2025-04-24 00:38:52,660 INFO o.a.j.t.JMeterThread: Stopping: stress 1-37
+2025-04-24 00:38:52,660 INFO o.a.j.t.JMeterThread: Stopping: stress 1-98
+2025-04-24 00:38:52,660 INFO o.a.j.t.JMeterThread: Thread started: stress 1-122
+2025-04-24 00:38:52,660 INFO o.a.j.t.JMeterThread: Thread started: stress 1-33
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Stopping: stress 1-31
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread started: stress 1-37
+2025-04-24 00:38:52,659 INFO o.a.j.t.JMeterThread: Thread started: stress 1-115
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-122
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Stopping: stress 1-28
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread started: stress 1-98
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread started: stress 1-31
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-37
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-33
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Stopping: stress 1-108
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-98
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Stopping: stress 1-4
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-31
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread started: stress 1-108
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-115
+2025-04-24 00:38:52,661 INFO o.a.j.t.JMeterThread: Thread started: stress 1-28
+2025-04-24 00:38:52,662 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-4 sampler: HTTP Request
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-108
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-28
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-95
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-24
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-83
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-95
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-61
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-24
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-103
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-95
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-53
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-124
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-61
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-83
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-24
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Stopping: stress 1-140
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-103
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-83
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-61
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-124
+2025-04-24 00:38:52,662 INFO o.a.j.t.JMeterThread: Thread started: stress 1-53
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-103
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Stopping: stress 1-89
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Stopping: stress 1-96
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Stopping: stress 1-6
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread started: stress 1-140
+2025-04-24 00:38:52,664 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-6 sampler: HTTP Request
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-53
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Stopping: stress 1-62
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-140
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread started: stress 1-96
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread started: stress 1-62
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-124
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread started: stress 1-89
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Stopping: stress 1-128
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-62
+2025-04-24 00:38:52,664 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-96
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Stopping: stress 1-117
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-4
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-89
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-6
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread started: stress 1-128
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Stopping: stress 1-23
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread started: stress 1-117
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-128
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Stopping: stress 1-57
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Stopping: stress 1-1
+2025-04-24 00:38:52,665 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-1 sampler: HTTP Request
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-117
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Stopping: stress 1-123
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-90
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-110
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-15
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-23
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-123
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-110
+2025-04-24 00:38:52,665 INFO o.a.j.t.JMeterThread: Thread started: stress 1-57
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-123
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-90
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-70
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-8
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-15
+2025-04-24 00:38:52,666 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-8 sampler: HTTP Request
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-57
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-110
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-23
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-1
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Stopping: stress 1-68
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-90
+2025-04-24 00:38:52,666 INFO o.a.j.t.JMeterThread: Thread started: stress 1-70
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-15
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-70
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Stopping: stress 1-127
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-8
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Stopping: stress 1-58
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread started: stress 1-68
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Stopping: stress 1-25
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Stopping: stress 1-9
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread started: stress 1-127
+2025-04-24 00:38:52,667 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-9 sampler: HTTP Request
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread started: stress 1-58
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread started: stress 1-25
+2025-04-24 00:38:52,667 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-68
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-109
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-58
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-66
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-130
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-127
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-146
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-109
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-84
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-25
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-67
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-121
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-130
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-109
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-94
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-9
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-66
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-130
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-84
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-67
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-146
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-125
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-66
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-121
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-94
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-67
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-87
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-136
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-125
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-84
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-121
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-81
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-146
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-87
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-125
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-94
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Stopping: stress 1-82
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-136
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-87
+2025-04-24 00:38:52,668 INFO o.a.j.t.JMeterThread: Thread started: stress 1-81
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-77
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-136
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-27
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-82
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-142
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-81
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-77
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-101
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-82
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-93
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-27
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-77
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-142
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-19
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-101
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-144
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-27
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-93
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-142
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-78
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-19
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-101
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Stopping: stress 1-100
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-144
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread started: stress 1-78
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-5
+2025-04-24 00:38:52,669 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-93
+2025-04-24 00:38:52,670 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-5 sampler: HTTP Request
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-144
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-19
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-78
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-100
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-100
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-145
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-143
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-148
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-22
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-59
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-143
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-114
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-148
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-75
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-145
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-22
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-35
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-143
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-148
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-114
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-59
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-145
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-20
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-5
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-22
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-35
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-75
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-85
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-59
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-35
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-141
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-75
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-114
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Stopping: stress 1-138
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-20
+2025-04-24 00:38:52,670 INFO o.a.j.t.JMeterThread: Thread started: stress 1-85
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-147
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-86
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-141
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-45
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-20
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-138
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-85
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-147
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-86
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-40
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-147
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-45
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-42
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-86
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-141
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-138
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-88
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-45
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-40
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-42
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-44
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-40
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-18
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-42
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-16
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-65
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-88
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-44
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-64
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-18
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-16
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-88
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-44
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-18
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-65
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-64
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-16
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-26
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-60
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-65
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Stopping: stress 1-51
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-64
+2025-04-24 00:38:52,671 INFO o.a.j.t.JMeterThread: Thread started: stress 1-26
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-50
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-60
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-104
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-51
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-129
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-60
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-26
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-29
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-50
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-135
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-104
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-129
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-51
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-43
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-29
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-129
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-135
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-104
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-135
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-50
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-29
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-43
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-71
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-80
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-43
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-73
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-116
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-132
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-71
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-80
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread started: stress 1-73
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Stopping: stress 1-149
+2025-04-24 00:38:52,672 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-71
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Stopping: stress 1-91
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-73
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread started: stress 1-149
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread started: stress 1-116
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-80
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-116
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Stopping: stress 1-10
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-149
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread started: stress 1-91
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread started: stress 1-132
+2025-04-24 00:38:52,673 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-10 sampler: HTTP Request
+2025-04-24 00:38:52,673 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-132
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-79
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-21
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-133
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-91
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-79
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-32
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-133
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-79
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-21
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-119
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-133
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-92
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-21
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-17
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-76
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-112
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-32
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-14
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-92
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-54
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-76
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-36
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-92
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-32
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-17
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-36
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-54
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-38
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-10
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-48
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-54
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-36
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-14
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-119
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-74
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-38
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-76
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-119
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-112
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Stopping: stress 1-118
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-74
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-38
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-17
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread started: stress 1-48
+2025-04-24 00:38:52,674 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-14
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-112
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Stopping: stress 1-12
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-48
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-74
+2025-04-24 00:38:52,675 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-12 sampler: HTTP Request
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread started: stress 1-118
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Stopping: stress 1-99
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-118
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Stopping: stress 1-134
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Stopping: stress 1-34
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Stopping: stress 1-3
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread started: stress 1-99
+2025-04-24 00:38:52,675 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-3 sampler: HTTP Request
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread started: stress 1-134
+2025-04-24 00:38:52,675 INFO o.a.j.t.JMeterThread: Thread started: stress 1-34
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-99
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-34
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-134
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-120
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-137
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-102
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread started: stress 1-120
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-2
+2025-04-24 00:38:52,676 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-2 sampler: HTTP Request
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread started: stress 1-137
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread started: stress 1-102
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-12
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-120
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-102
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-111
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-137
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-13
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-3
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-63
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Stopping: stress 1-69
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread started: stress 1-111
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Stopping: stress 1-11
+2025-04-24 00:38:52,676 INFO o.a.j.t.JMeterThread: Thread started: stress 1-13
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-111
+2025-04-24 00:38:52,677 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-11 sampler: HTTP Request
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-13
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread started: stress 1-69
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-2
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-69
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread started: stress 1-63
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Stopping: stress 1-56
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Stopping: stress 1-7
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-63
+2025-04-24 00:38:52,677 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-7 sampler: HTTP Request
+2025-04-24 00:38:52,677 INFO o.a.j.t.JMeterThread: Thread started: stress 1-56
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-11
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-56
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Stopping: stress 1-49
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Stopping: stress 1-97
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Stopping: stress 1-52
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread started: stress 1-49
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Stopping: stress 1-72
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread started: stress 1-97
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Stopping: stress 1-113
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-7
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-49
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread started: stress 1-52
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread started: stress 1-72
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-97
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread started: stress 1-113
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-52
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-72
+2025-04-24 00:38:52,678 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-113
+2025-04-24 00:38:52,678 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-04-24 00:38:52,678 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-04-24 00:38:58,102 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-04-24 00:38:58,102 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-04-24 00:38:58,102 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-04-24 00:38:58,220 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : stress
+2025-04-24 00:38:58,220 INFO o.a.j.e.StandardJMeterEngine: Starting 150 threads for group stress.
+2025-04-24 00:38:58,220 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-04-24 00:38:58,220 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=150 ramp-up=150 delayedStart=false
+2025-04-24 00:38:58,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-1
+2025-04-24 00:38:58,236 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-04-24 00:38:58,236 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-04-24 00:38:59,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-2
+2025-04-24 00:39:00,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-3
+2025-04-24 00:39:01,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-4
+2025-04-24 00:39:02,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-5
+2025-04-24 00:39:03,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-6
+2025-04-24 00:39:04,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-7
+2025-04-24 00:39:05,225 INFO o.a.j.t.JMeterThread: Thread started: stress 1-8
+2025-04-24 00:39:06,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-9
+2025-04-24 00:39:07,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-10
+2025-04-24 00:39:08,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-11
+2025-04-24 00:39:09,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-12
+2025-04-24 00:39:10,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-13
+2025-04-24 00:39:11,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-14
+2025-04-24 00:39:12,224 INFO o.a.j.t.JMeterThread: Thread started: stress 1-15
+2025-04-24 00:39:13,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-16
+2025-04-24 00:39:14,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-17
+2025-04-24 00:39:15,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-18
+2025-04-24 00:39:16,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-19
+2025-04-24 00:39:17,230 INFO o.a.j.t.JMeterThread: Thread started: stress 1-20
+2025-04-24 00:39:18,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-21
+2025-04-24 00:39:19,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-22
+2025-04-24 00:39:20,234 INFO o.a.j.t.JMeterThread: Thread started: stress 1-23
+2025-04-24 00:39:21,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-24
+2025-04-24 00:39:22,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-25
+2025-04-24 00:39:23,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-26
+2025-04-24 00:39:24,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-27
+2025-04-24 00:39:25,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-28
+2025-04-24 00:39:26,233 INFO o.a.j.t.JMeterThread: Thread started: stress 1-29
+2025-04-24 00:39:27,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-30
+2025-04-24 00:39:28,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-31
+2025-04-24 00:39:29,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-32
+2025-04-24 00:39:30,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-33
+2025-04-24 00:39:31,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-34
+2025-04-24 00:39:32,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-35
+2025-04-24 00:39:33,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-36
+2025-04-24 00:39:34,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-37
+2025-04-24 00:39:35,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-38
+2025-04-24 00:39:36,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-39
+2025-04-24 00:39:37,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-40
+2025-04-24 00:39:38,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-41
+2025-04-24 00:39:39,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-42
+2025-04-24 00:39:40,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-43
+2025-04-24 00:39:41,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-44
+2025-04-24 00:39:42,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-45
+2025-04-24 00:39:43,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-46
+2025-04-24 00:39:44,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-47
+2025-04-24 00:39:45,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-48
+2025-04-24 00:39:46,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-49
+2025-04-24 00:39:47,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-50
+2025-04-24 00:39:48,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-51
+2025-04-24 00:39:49,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-52
+2025-04-24 00:39:50,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-53
+2025-04-24 00:39:51,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-54
+2025-04-24 00:39:52,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-55
+2025-04-24 00:39:53,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-56
+2025-04-24 00:39:54,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-57
+2025-04-24 00:39:55,225 INFO o.a.j.t.JMeterThread: Thread started: stress 1-58
+2025-04-24 00:39:56,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-59
+2025-04-24 00:39:57,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-60
+2025-04-24 00:39:58,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-61
+2025-04-24 00:39:59,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-62
+2025-04-24 00:40:00,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-63
+2025-04-24 00:40:01,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-64
+2025-04-24 00:40:02,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-65
+2025-04-24 00:40:03,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-66
+2025-04-24 00:40:04,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-67
+2025-04-24 00:40:05,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-68
+2025-04-24 00:40:06,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-69
+2025-04-24 00:40:07,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-70
+2025-04-24 00:40:08,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-71
+2025-04-24 00:40:09,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-72
+2025-04-24 00:40:10,223 INFO o.a.j.t.JMeterThread: Thread started: stress 1-73
+2025-04-24 00:40:11,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-74
+2025-04-24 00:40:12,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-75
+2025-04-24 00:40:13,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-76
+2025-04-24 00:40:14,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-77
+2025-04-24 00:40:15,235 INFO o.a.j.t.JMeterThread: Thread started: stress 1-78
+2025-04-24 00:40:16,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-79
+2025-04-24 00:40:17,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-80
+2025-04-24 00:40:18,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-81
+2025-04-24 00:40:19,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-82
+2025-04-24 00:40:20,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-83
+2025-04-24 00:40:21,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-84
+2025-04-24 00:40:22,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-85
+2025-04-24 00:40:23,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-86
+2025-04-24 00:40:24,223 INFO o.a.j.t.JMeterThread: Thread started: stress 1-87
+2025-04-24 00:40:25,230 INFO o.a.j.t.JMeterThread: Thread started: stress 1-88
+2025-04-24 00:40:26,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-89
+2025-04-24 00:40:27,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-90
+2025-04-24 00:40:28,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-91
+2025-04-24 00:40:29,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-92
+2025-04-24 00:40:30,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-93
+2025-04-24 00:40:31,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-94
+2025-04-24 00:40:32,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-95
+2025-04-24 00:40:33,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-96
+2025-04-24 00:40:34,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-97
+2025-04-24 00:40:35,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-98
+2025-04-24 00:40:36,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-99
+2025-04-24 00:40:37,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-100
+2025-04-24 00:40:38,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-101
+2025-04-24 00:40:39,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-102
+2025-04-24 00:40:40,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-103
+2025-04-24 00:40:41,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-104
+2025-04-24 00:40:42,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-105
+2025-04-24 00:40:43,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-106
+2025-04-24 00:40:44,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-107
+2025-04-24 00:40:45,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-108
+2025-04-24 00:40:46,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-109
+2025-04-24 00:40:47,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-110
+2025-04-24 00:40:48,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-111
+2025-04-24 00:40:49,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-112
+2025-04-24 00:40:50,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-113
+2025-04-24 00:40:51,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-114
+2025-04-24 00:40:52,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-115
+2025-04-24 00:40:53,230 INFO o.a.j.t.JMeterThread: Thread started: stress 1-116
+2025-04-24 00:40:54,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-117
+2025-04-24 00:40:55,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-118
+2025-04-24 00:40:56,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-119
+2025-04-24 00:40:57,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-120
+2025-04-24 00:40:58,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-121
+2025-04-24 00:40:59,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-122
+2025-04-24 00:41:00,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-123
+2025-04-24 00:41:01,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-124
+2025-04-24 00:41:02,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-125
+2025-04-24 00:41:03,234 INFO o.a.j.t.JMeterThread: Thread started: stress 1-126
+2025-04-24 00:41:04,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-127
+2025-04-24 00:41:05,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-128
+2025-04-24 00:41:06,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-129
+2025-04-24 00:41:07,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-130
+2025-04-24 00:41:08,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-131
+2025-04-24 00:41:09,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-132
+2025-04-24 00:41:10,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-133
+2025-04-24 00:41:11,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-134
+2025-04-24 00:41:12,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-135
+2025-04-24 00:41:13,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-136
+2025-04-24 00:41:14,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-137
+2025-04-24 00:41:15,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-138
+2025-04-24 00:41:16,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-139
+2025-04-24 00:41:17,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-140
+2025-04-24 00:41:18,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-141
+2025-04-24 00:41:19,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-142
+2025-04-24 00:41:20,235 INFO o.a.j.t.JMeterThread: Thread started: stress 1-143
+2025-04-24 00:41:21,222 INFO o.a.j.t.JMeterThread: Thread started: stress 1-144
+2025-04-24 00:41:22,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-145
+2025-04-24 00:41:23,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-146
+2025-04-24 00:41:24,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-147
+2025-04-24 00:41:25,235 INFO o.a.j.t.JMeterThread: Thread started: stress 1-148
+2025-04-24 00:41:26,221 INFO o.a.j.t.JMeterThread: Thread started: stress 1-149
+2025-04-24 00:41:27,220 INFO o.a.j.t.JMeterThread: Thread started: stress 1-150
+2025-04-24 00:42:35,759 INFO o.a.j.g.a.Start: Stopping test
+2025-04-24 00:42:35,764 INFO o.a.j.t.JMeterThread: Stopping: stress 1-43
+2025-04-24 00:42:35,764 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-43 sampler: HTTP Request
+2025-04-24 00:42:35,768 INFO o.a.j.t.JMeterThread: Stopping: stress 1-11
+2025-04-24 00:42:35,768 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-11 sampler: HTTP Request
+2025-04-24 00:42:35,768 INFO o.a.j.t.JMeterThread: Stopping: stress 1-138
+2025-04-24 00:42:35,768 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-138 sampler: HTTP Request
+2025-04-24 00:42:35,769 INFO o.a.j.t.JMeterThread: Stopping: stress 1-49
+2025-04-24 00:42:35,769 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-49 sampler: HTTP Request
+2025-04-24 00:42:35,769 INFO o.a.j.t.JMeterThread: Stopping: stress 1-130
+2025-04-24 00:42:35,769 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-130 sampler: HTTP Request
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Stopping: stress 1-95
+2025-04-24 00:42:35,771 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-95 sampler: HTTP Request
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Stopping: stress 1-6
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-138
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-43
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-11
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-49
+2025-04-24 00:42:35,771 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-6 sampler: HTTP Request
+2025-04-24 00:42:35,771 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-130
+2025-04-24 00:42:35,772 INFO o.a.j.t.JMeterThread: Stopping: stress 1-112
+2025-04-24 00:42:35,772 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-112 sampler: HTTP Request
+2025-04-24 00:42:35,772 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-95
+2025-04-24 00:42:35,773 INFO o.a.j.t.JMeterThread: Stopping: stress 1-55
+2025-04-24 00:42:35,775 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-55 sampler: HTTP Request
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-6
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Stopping: stress 1-72
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-112
+2025-04-24 00:42:35,775 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-72 sampler: HTTP Request
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Stopping: stress 1-121
+2025-04-24 00:42:35,775 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-121 sampler: HTTP Request
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Stopping: stress 1-17
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-55
+2025-04-24 00:42:35,775 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-72
+2025-04-24 00:42:35,775 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-17 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-121
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-113
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-113 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-21
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-21 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-17
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-113
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-92
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-92 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-118
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-118 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-21
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-92
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-116
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-116 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-118
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-141
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-141 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-61
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-61 sampler: HTTP Request
+2025-04-24 00:42:35,776 INFO o.a.j.t.JMeterThread: Stopping: stress 1-119
+2025-04-24 00:42:35,776 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-119 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-98
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-116
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-141
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-98 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-20
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-61
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-20 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-119
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-70
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-70 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-91
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-91 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-98
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-128
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-128 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-20
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-70
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-88
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-88 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-84
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-84 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-91
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-128
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-48
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-88
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-48 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Stopping: stress 1-37
+2025-04-24 00:42:35,777 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-37 sampler: HTTP Request
+2025-04-24 00:42:35,777 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-84
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-80
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-80 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-48
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-86
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-86 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-37
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-109
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-109 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-80
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-147
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-147 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-86
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-51
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-51 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-109
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-69
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-147
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-69 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-114
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-114 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-51
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-146
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-146 sampler: HTTP Request
+2025-04-24 00:42:35,780 INFO o.a.j.t.JMeterThread: Stopping: stress 1-124
+2025-04-24 00:42:35,780 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-124 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-16
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-69
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-16 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-114
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-146
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-57
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-57 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-120
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-124
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-120 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-16
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-136
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-136 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-57
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-41
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-120
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-41 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-96
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-136
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-96 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-143
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-41
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-143 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-96
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-87
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-87 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-52
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-52 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-143
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Stopping: stress 1-36
+2025-04-24 00:42:35,781 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-36 sampler: HTTP Request
+2025-04-24 00:42:35,781 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-87
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-52
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-26
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-26 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-90
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-90 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-36
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-102
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-102 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-26
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-24
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-90
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-24 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-104
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-104 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-102
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-5
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-5 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-24
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-132
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-132 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-47
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-47 sampler: HTTP Request
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-5
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-104
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Stopping: stress 1-100
+2025-04-24 00:42:35,782 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-132
+2025-04-24 00:42:35,782 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-100 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-47
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-142
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-142 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-25
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-25 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-34
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-100
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-34 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-142
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-12
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-12 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-25
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-22
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-22 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-34
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-56
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-56 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-12
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-78
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-22
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-78 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-15
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-15 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Stopping: stress 1-31
+2025-04-24 00:42:35,783 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-31 sampler: HTTP Request
+2025-04-24 00:42:35,783 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-56
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-85
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-85 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-78
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-66
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-15
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-66 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-31
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-101
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-101 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-103
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-85
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-103 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-66
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-101
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-140
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-140 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-103
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-129
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-129 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-140
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-54
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-54 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-129
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-2
+2025-04-24 00:42:35,784 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-2 sampler: HTTP Request
+2025-04-24 00:42:35,784 INFO o.a.j.t.JMeterThread: Stopping: stress 1-35
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-35 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-30
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-30 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-54
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-73
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-73 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-2
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-35
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-7
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-7 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-30
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-67
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-67 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-79
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-79 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-73
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-123
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-123 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-7
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-9
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-9 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-10
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-10 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-79
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-105
+2025-04-24 00:42:35,785 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-105 sampler: HTTP Request
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-67
+2025-04-24 00:42:35,785 INFO o.a.j.t.JMeterThread: Stopping: stress 1-137
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-137 sampler: HTTP Request
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-10
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Stopping: stress 1-13
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-13 sampler: HTTP Request
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-9
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-105
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Stopping: stress 1-64
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-123
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-64 sampler: HTTP Request
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-137
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-13
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Stopping: stress 1-134
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-134 sampler: HTTP Request
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Stopping: stress 1-135
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-135 sampler: HTTP Request
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Stopping: stress 1-139
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-64
+2025-04-24 00:42:35,786 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-134
+2025-04-24 00:42:35,786 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-139 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-81
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-81 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-135
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-59
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-139
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-59 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-81
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-111
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-111 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-125
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-59
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-125 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-111
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-4
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-4 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-74
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-74 sampler: HTTP Request
+2025-04-24 00:42:35,787 INFO o.a.j.t.JMeterThread: Stopping: stress 1-27
+2025-04-24 00:42:35,787 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-27 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-63
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-63 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-125
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-18
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-18 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-71
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-71 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-28
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-27
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-28 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-62
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-4
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-62 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-93
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-93 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-28
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-126
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-126 sampler: HTTP Request
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-71
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Stopping: stress 1-65
+2025-04-24 00:42:35,788 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-93
+2025-04-24 00:42:35,788 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-65 sampler: HTTP Request
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-63
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-62
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Stopping: stress 1-1
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-126
+2025-04-24 00:42:35,789 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-1 sampler: HTTP Request
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Stopping: stress 1-127
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-74
+2025-04-24 00:42:35,789 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-65
+2025-04-24 00:42:35,790 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-127 sampler: HTTP Request
+2025-04-24 00:42:35,790 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-18
+2025-04-24 00:42:35,790 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-1
+2025-04-24 00:42:35,790 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-127
+2025-04-24 00:42:35,790 INFO o.a.j.t.JMeterThread: Stopping: stress 1-53
+2025-04-24 00:42:35,791 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-53 sampler: HTTP Request
+2025-04-24 00:42:35,791 INFO o.a.j.t.JMeterThread: Stopping: stress 1-149
+2025-04-24 00:42:35,792 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-149 sampler: HTTP Request
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-53
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Stopping: stress 1-110
+2025-04-24 00:42:35,792 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-110 sampler: HTTP Request
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Stopping: stress 1-76
+2025-04-24 00:42:35,792 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-76 sampler: HTTP Request
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-149
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Stopping: stress 1-107
+2025-04-24 00:42:35,792 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-107 sampler: HTTP Request
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Stopping: stress 1-145
+2025-04-24 00:42:35,792 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-145 sampler: HTTP Request
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-76
+2025-04-24 00:42:35,792 INFO o.a.j.t.JMeterThread: Stopping: stress 1-19
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-19 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-110
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-83
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-83 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-144
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-144 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-45
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-45 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-8
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-8 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-150
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-150 sampler: HTTP Request
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Stopping: stress 1-32
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-45
+2025-04-24 00:42:35,793 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-150
+2025-04-24 00:42:35,793 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-32 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-145
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-8
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-122
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-122 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-33
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-144
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-33 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-107
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-148
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-148 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-29
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-29 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-33
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-131
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-32
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-131 sampler: HTTP Request
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Stopping: stress 1-50
+2025-04-24 00:42:35,794 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-148
+2025-04-24 00:42:35,794 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-50 sampler: HTTP Request
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Stopping: stress 1-39
+2025-04-24 00:42:35,795 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-39 sampler: HTTP Request
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-29
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Stopping: stress 1-60
+2025-04-24 00:42:35,795 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-60 sampler: HTTP Request
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Stopping: stress 1-68
+2025-04-24 00:42:35,795 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-68 sampler: HTTP Request
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Stopping: stress 1-117
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-39
+2025-04-24 00:42:35,795 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-117 sampler: HTTP Request
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-19
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-117
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-60
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-68
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-83
+2025-04-24 00:42:35,795 INFO o.a.j.t.JMeterThread: Stopping: stress 1-99
+2025-04-24 00:42:35,795 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-99 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-50
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-131
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-122
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-40
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-40 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-99
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-14
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-14 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-40
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-97
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-97 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-106
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-106 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-38
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-38 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-14
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-115
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-115 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-97
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-42
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-106
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-42 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-3
+2025-04-24 00:42:35,796 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-3 sampler: HTTP Request
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-38
+2025-04-24 00:42:35,796 INFO o.a.j.t.JMeterThread: Stopping: stress 1-94
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-94 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-115
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-44
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-42
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-44 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-3
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-58
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-58 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-94
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-46
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-46 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-75
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-75 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-44
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-23
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-23 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-77
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-77 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-58
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-82
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-82 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-46
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-133
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-133 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-108
+2025-04-24 00:42:35,797 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-108 sampler: HTTP Request
+2025-04-24 00:42:35,797 INFO o.a.j.t.JMeterThread: Stopping: stress 1-89
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-23
+2025-04-24 00:42:35,798 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-89 sampler: HTTP Request
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-82
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-77
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-108
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-75
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-133
+2025-04-24 00:42:35,798 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-89
+2025-04-24 00:42:35,798 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-04-24 00:42:35,798 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-04-24 00:43:13,707 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-04-24 00:43:13,707 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-04-24 00:43:13,707 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-04-24 00:43:13,835 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : stress
+2025-04-24 00:43:13,835 INFO o.a.j.e.StandardJMeterEngine: Starting 250 threads for group stress.
+2025-04-24 00:43:13,835 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-04-24 00:43:13,835 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=250 ramp-up=750 delayedStart=false
+2025-04-24 00:43:13,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-1
+2025-04-24 00:43:13,851 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-04-24 00:43:13,851 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-04-24 00:43:16,836 INFO o.a.j.t.JMeterThread: Thread started: stress 1-2
+2025-04-24 00:43:19,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-3
+2025-04-24 00:43:22,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-4
+2025-04-24 00:43:25,836 INFO o.a.j.t.JMeterThread: Thread started: stress 1-5
+2025-04-24 00:43:28,848 INFO o.a.j.t.JMeterThread: Thread started: stress 1-6
+2025-04-24 00:43:31,837 INFO o.a.j.t.JMeterThread: Thread started: stress 1-7
+2025-04-24 00:43:34,836 INFO o.a.j.t.JMeterThread: Thread started: stress 1-8
+2025-04-24 00:43:37,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-9
+2025-04-24 00:43:40,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-10
+2025-04-24 00:43:43,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-11
+2025-04-24 00:43:46,836 INFO o.a.j.t.JMeterThread: Thread started: stress 1-12
+2025-04-24 00:43:49,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-13
+2025-04-24 00:43:52,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-14
+2025-04-24 00:43:55,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-15
+2025-04-24 00:43:58,836 INFO o.a.j.t.JMeterThread: Thread started: stress 1-16
+2025-04-24 00:44:01,835 INFO o.a.j.t.JMeterThread: Thread started: stress 1-17
+2025-04-24 00:44:04,484 INFO o.a.j.g.a.Start: Stopping test
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-194
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-210
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-84
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-248
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-74
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-104
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-217
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-194
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-116
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-248
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-74
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-210
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-104
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-153
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-84
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-116
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-59
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-248
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-116
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-62
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-153
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-217
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-104
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-59
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-217
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-59
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-210
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-194
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-74
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-62
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-131
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-153
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-62
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-84
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-72
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-133
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-131
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-152
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-131
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-133
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-72
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-133
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-163
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-152
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-72
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-18
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Stopping: stress 1-10
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-163
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread started: stress 1-18
+2025-04-24 00:44:04,490 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-10 sampler: HTTP Request
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-152
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-163
+2025-04-24 00:44:04,490 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-18
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-192
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-77
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-22
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-90
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-170
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-37
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-192
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-77
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-192
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-90
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-37
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-57
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-22
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-37
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-77
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-73
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-170
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-22
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-170
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-90
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-73
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-57
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-167
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-10
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-32
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-73
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-57
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-167
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-107
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-32
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-101
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-167
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Stopping: stress 1-14
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-32
+2025-04-24 00:44:04,491 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-14 sampler: HTTP Request
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-107
+2025-04-24 00:44:04,491 INFO o.a.j.t.JMeterThread: Thread started: stress 1-101
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-107
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-125
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-101
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-224
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-125
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-26
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-125
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-110
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-224
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-94
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-216
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-26
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-224
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-110
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-226
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-26
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-216
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-110
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-94
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-14
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-216
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-94
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-106
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-128
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-226
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-204
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-226
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-65
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-106
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-53
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Stopping: stress 1-3
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-128
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-106
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-204
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-53
+2025-04-24 00:44:04,492 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-3 sampler: HTTP Request
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-128
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-53
+2025-04-24 00:44:04,492 INFO o.a.j.t.JMeterThread: Thread started: stress 1-65
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-204
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-65
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-242
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-112
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-189
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-154
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-242
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-181
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-189
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-242
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-154
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-189
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-112
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-181
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-3
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-246
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-112
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-154
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-27
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-246
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-181
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-165
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-246
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-211
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-27
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-58
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-165
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-211
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-27
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-165
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Stopping: stress 1-11
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-211
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread started: stress 1-58
+2025-04-24 00:44:04,493 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-11 sampler: HTTP Request
+2025-04-24 00:44:04,493 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-58
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-96
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-19
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-50
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-239
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-109
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-96
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-19
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-173
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-50
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-239
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-50
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-19
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-142
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-109
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-173
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-96
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-239
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-173
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-109
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-11
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-244
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-142
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-159
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-142
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-201
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-244
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-159
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-87
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-244
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-159
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-137
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-201
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-87
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-201
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-75
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-87
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-137
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-172
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-75
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-137
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-177
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-172
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-205
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-172
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Stopping: stress 1-79
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread started: stress 1-177
+2025-04-24 00:44:04,494 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-75
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-144
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-138
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-177
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-79
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-144
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-205
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-79
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-6
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-138
+2025-04-24 00:44:04,495 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-6 sampler: HTTP Request
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-144
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-205
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-138
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-140
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-243
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-114
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-64
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-80
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-243
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-114
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-64
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-140
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-80
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-114
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-23
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-80
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-6
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-38
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-64
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-245
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-23
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-243
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-140
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-23
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-38
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-245
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-117
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-245
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-38
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-215
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-117
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Stopping: stress 1-8
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-117
+2025-04-24 00:44:04,495 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-8 sampler: HTTP Request
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread started: stress 1-215
+2025-04-24 00:44:04,495 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-215
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-233
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-136
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-168
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-171
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-185
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-233
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-136
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-197
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-171
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-168
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-136
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-233
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-197
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-185
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-95
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-185
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-8
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-188
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-168
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-191
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-171
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-95
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-188
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-49
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-191
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-95
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-41
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-176
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-49
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-197
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-28
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-49
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-176
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-188
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-176
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-41
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-76
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-191
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-111
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-41
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-28
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-236
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-111
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-76
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-236
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-149
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-111
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-76
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-236
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-28
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-55
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Stopping: stress 1-218
+2025-04-24 00:44:04,496 INFO o.a.j.t.JMeterThread: Thread started: stress 1-149
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-92
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-55
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-89
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-55
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-149
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-92
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-15
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-218
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-92
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-89
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-218
+2025-04-24 00:44:04,497 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-15 sampler: HTTP Request
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-89
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-174
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-207
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-212
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-13
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-174
+2025-04-24 00:44:04,497 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-13 sampler: HTTP Request
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-207
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-174
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread started: stress 1-212
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-207
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Stopping: stress 1-45
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-212
+2025-04-24 00:44:04,497 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-15
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-39
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-120
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-35
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-39
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-108
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-45
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-120
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-13
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-35
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-45
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-108
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-39
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-42
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-108
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-103
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-35
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-120
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-184
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-42
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-237
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-103
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-145
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-184
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-237
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-4
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-184
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-145
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-103
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-42
+2025-04-24 00:44:04,498 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-4 sampler: HTTP Request
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-145
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-237
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-24
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-203
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-238
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-119
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-24
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-203
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-238
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-24
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-203
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-68
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-238
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-4
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-130
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-119
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-29
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-119
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-130
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-25
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-68
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-130
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-179
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-29
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-68
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-44
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-25
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-160
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-229
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-179
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-223
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-44
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-179
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-229
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-44
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-223
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-229
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-29
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-223
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread started: stress 1-160
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Stopping: stress 1-115
+2025-04-24 00:44:04,498 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-25
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-158
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-160
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-97
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-54
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-115
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-146
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-115
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-54
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-158
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-78
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-54
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-97
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-146
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-157
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-240
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-97
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-99
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-158
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-183
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-157
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-240
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-78
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-99
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-240
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-146
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-78
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-157
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-183
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-166
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-99
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-183
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-148
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-88
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-151
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-118
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-166
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-147
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-148
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-118
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-198
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-118
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-147
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-88
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-151
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-147
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-88
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-221
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-148
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-166
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-66
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-221
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-198
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-221
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-151
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-198
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-20
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-213
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-66
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-52
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-67
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-20
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-213
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-71
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-66
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-20
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-67
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-52
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-67
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread started: stress 1-71
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-213
+2025-04-24 00:44:04,499 INFO o.a.j.t.JMeterThread: Stopping: stress 1-113
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-52
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-71
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-46
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-113
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-86
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-209
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-113
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-182
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-46
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-123
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-86
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-43
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-209
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-86
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-43
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-46
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-209
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-182
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-43
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-2
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-182
+2025-04-24 00:44:04,501 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-2 sampler: HTTP Request
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-123
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-123
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-124
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-139
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-161
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-129
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-121
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-124
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-139
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-129
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-124
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-139
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-129
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-169
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-161
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-47
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-121
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-206
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-2
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-190
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-169
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-161
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Stopping: stress 1-12
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-169
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-190
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-206
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-121
+2025-04-24 00:44:04,501 INFO o.a.j.t.JMeterThread: Thread started: stress 1-47
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-206
+2025-04-24 00:44:04,502 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-12 sampler: HTTP Request
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-190
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-47
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-91
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-36
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-175
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-33
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-82
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-36
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-143
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-175
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-91
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-33
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-82
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-36
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-175
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-91
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-82
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-220
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-33
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-98
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-143
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-220
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-143
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-219
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-12
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-220
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-98
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-156
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-219
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-214
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-98
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-230
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-219
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-156
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Stopping: stress 1-16
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-214
+2025-04-24 00:44:04,502 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-16 sampler: HTTP Request
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread started: stress 1-230
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-156
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-230
+2025-04-24 00:44:04,502 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-214
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-208
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-186
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-162
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-186
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-208
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-164
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-186
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-162
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-31
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-208
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-235
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-16
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-164
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-200
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-162
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-31
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-164
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-235
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-227
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-31
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-200
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-85
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-235
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-102
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-234
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-200
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-127
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-102
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-227
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-234
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-102
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-85
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-227
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-34
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-85
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-1
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-127
+2025-04-24 00:44:04,503 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-1 sampler: HTTP Request
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-234
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-34
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-127
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-34
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-222
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-150
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-155
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-195
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-222
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Stopping: stress 1-17
+2025-04-24 00:44:04,503 INFO o.a.j.t.JMeterThread: Thread started: stress 1-150
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-155
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-222
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-150
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-1
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-155
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-195
+2025-04-24 00:44:04,504 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-17 sampler: HTTP Request
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-195
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-48
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-180
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-17
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-48
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-21
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-5
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-180
+2025-04-24 00:44:04,504 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-5 sampler: HTTP Request
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-180
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-21
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-48
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-21
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-56
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-196
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-132
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-56
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-231
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-56
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-196
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-132
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread started: stress 1-231
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Stopping: stress 1-61
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-132
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-196
+2025-04-24 00:44:04,504 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-5
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-231
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-100
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-93
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-228
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-100
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-61
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-69
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-100
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-9
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-228
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-93
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-69
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-228
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-93
+2025-04-24 00:44:04,505 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-9 sampler: HTTP Request
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-69
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-61
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-187
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-141
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-40
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-187
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-9
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-30
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-187
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-141
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-40
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-7
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-141
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-40
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-30
+2025-04-24 00:44:04,505 WARN o.a.j.t.JMeterThread: Interrupting: stress 1-7 sampler: HTTP Request
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-30
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-135
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-81
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-51
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-247
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-250
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-135
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-81
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-225
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-51
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-81
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-126
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-250
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-225
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-135
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-225
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-250
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-247
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-126
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-178
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-126
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-134
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-51
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-105
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-7
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-249
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-70
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-134
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-105
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-241
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-249
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-134
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-70
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-178
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-249
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-70
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-247
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-178
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-105
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-122
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-83
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-63
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-202
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-241
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-232
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-122
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-241
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-63
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-202
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-83
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-232
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-63
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-60
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-83
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-193
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-122
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-202
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-232
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-60
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-193
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Stopping: stress 1-199
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-60
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-193
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread started: stress 1-199
+2025-04-24 00:44:04,505 INFO o.a.j.t.JMeterThread: Thread finished: stress 1-199
+2025-04-24 00:44:04,505 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-04-24 00:44:04,505 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
