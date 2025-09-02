@@ -1,37 +1,51 @@
-2025-04-29 19:10:49,739 INFO o.a.j.u.JMeterUtils: Setting Locale to ru_RU
-2025-04-29 19:10:49,752 ERROR o.a.j.u.JMeterUtils: Could not find resources for 'ru_RU'
-2025-04-29 19:10:49,752 INFO o.a.j.JMeter: Loading user properties from: user.properties
-2025-04-29 19:10:49,754 INFO o.a.j.JMeter: Loading system properties from: system.properties
-2025-04-29 19:10:49,760 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: Version 5.6.3
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: java.version=1.8.0_401
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: os.name=Windows 11
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: os.arch=amd64
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: os.version=10.0
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: file.encoding=Cp1251
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: java.awt.headless=null
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: Max memory     =7618953216
-2025-04-29 19:10:49,761 INFO o.a.j.JMeter: Available Processors =16
-2025-04-29 19:10:49,767 INFO o.a.j.JMeter: Default Locale=русский (Россия)
-2025-04-29 19:10:49,767 INFO o.a.j.JMeter: JMeter  Locale=русский (Россия)
-2025-04-29 19:10:49,767 INFO o.a.j.JMeter: JMeterHome=D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3
-2025-04-29 19:10:49,767 INFO o.a.j.JMeter: user.dir  =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
-2025-04-29 19:10:49,768 INFO o.a.j.JMeter: PWD       =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
-2025-04-29 19:10:49,769 INFO o.a.j.JMeter: IP: 192.168.31.109 Name: ilusha FullName: host.docker.internal
-2025-04-29 19:10:49,791 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2025-04-29 19:10:49,975 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
-2025-04-29 19:10:51,129 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,136 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,138 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,230 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,272 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,348 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,349 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,350 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,353 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,353 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2025-04-29 19:10:51,439 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.4.jar
-2025-04-29 19:10:51,440 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar
-2025-04-29 19:10:54,037 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-additional=2.0, jpgc-casutg=3.0, jpgc-graphs-vs=2.0, jpgc-plugins-manager=0.20, jmeter-core=5.6.3, jmeter-ftp=5.6.3, jmeter-http=5.6.3, jmeter-jdbc=5.6.3, jmeter-jms=5.6.3, jmeter-junit=5.6.3, jmeter-java=5.6.3, jmeter-ldap=5.6.3, jmeter-mail=5.6.3, jmeter-mongodb=5.6.3, jmeter-native=5.6.3, jmeter-tcp=5.6.3, jmeter-components=5.6.3]
-2025-04-29 19:10:54,037 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-casutg, jpgc-plugins-manager]
+2025-06-23 18:37:46,046 INFO o.a.j.u.JMeterUtils: Setting Locale to ru_RU
+2025-06-23 18:37:46,055 ERROR o.a.j.u.JMeterUtils: Could not find resources for 'ru_RU'
+2025-06-23 18:37:46,055 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-06-23 18:37:46,055 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: Version 5.6.3
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: java.version=1.8.0_401
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: os.name=Windows 11
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: os.arch=amd64
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: os.version=10.0
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: file.encoding=Cp1251
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: java.awt.headless=null
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: Max memory     =7618953216
+2025-06-23 18:37:46,060 INFO o.a.j.JMeter: Available Processors =16
+2025-06-23 18:37:46,063 INFO o.a.j.JMeter: Default Locale=русский (Россия)
+2025-06-23 18:37:46,063 INFO o.a.j.JMeter: JMeter  Locale=русский (Россия)
+2025-06-23 18:37:46,063 INFO o.a.j.JMeter: JMeterHome=D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3
+2025-06-23 18:37:46,063 INFO o.a.j.JMeter: user.dir  =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
+2025-06-23 18:37:46,064 INFO o.a.j.JMeter: PWD       =D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin
+2025-06-23 18:37:46,065 INFO o.a.j.JMeter: IP: 192.168.31.109 Name: ilusha FullName: host.docker.internal
+2025-06-23 18:37:46,076 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-06-23 18:37:46,186 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-06-23 18:37:47,176 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,184 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,187 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,269 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,307 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,371 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-additional-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,372 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-graphs-vs-2.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,373 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,375 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.0.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,376 INFO o.a.j.r.ClassFinder: Will scan jar D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-23 18:37:47,429 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\jmeter-plugins-cmn-jmeter-0.4.jar
+2025-06-23 18:37:47,429 WARN o.j.r.PluginManager: Found JAR conflict: D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.10.jar and D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-0.20.jar
+2025-06-23 18:37:49,701 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-additional=2.0, jpgc-casutg=3.0, jpgc-graphs-vs=2.0, jpgc-plugins-manager=0.20, jmeter-core=5.6.3, jmeter-ftp=5.6.3, jmeter-http=5.6.3, jmeter-jdbc=5.6.3, jmeter-jms=5.6.3, jmeter-junit=5.6.3, jmeter-java=5.6.3, jmeter-ldap=5.6.3, jmeter-mail=5.6.3, jmeter-mongodb=5.6.3, jmeter-native=5.6.3, jmeter-tcp=5.6.3, jmeter-components=5.6.3]
+2025-06-23 18:37:49,701 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-casutg, jpgc-plugins-manager]
+2025-06-23 18:37:57,123 INFO o.a.j.s.FileServer: Default base='D:\itmo_labs\TPO\tpo_lab4\apache-jmeter-5.6.3\bin'
+2025-06-23 18:37:57,125 INFO o.a.j.g.a.Load: Loading file: D:\itmo_labs\TPO\tpo_lab4\1.jmx
+2025-06-23 18:37:57,125 INFO o.a.j.s.FileServer: Set new base='D:\itmo_labs\TPO\tpo_lab4'
+2025-06-23 18:37:57,244 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-06-23 18:37:57,251 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-06-23 18:37:57,252 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-06-23 18:37:57,254 INFO o.a.j.s.SaveService: Loading file: D:\itmo_labs\TPO\tpo_lab4\1.jmx
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-06-23 18:37:57,355 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-06-23 18:37:57,723 INFO o.a.j.s.FileServer: Set new base='D:\itmo_labs\TPO\tpo_lab4'
